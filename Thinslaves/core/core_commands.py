@@ -40,7 +40,7 @@ if TYPE_CHECKING:
 
 __all__ = ["Core"]
 
-log = logging.getLogger("red")
+log = logging.getLogger("Slave")
 
 
 _ = i18n.Translator("Core", __file__)
@@ -49,7 +49,7 @@ TokenConverter = commands.get_dict_converter(delims=[" ", ",", ";"])
 
 
 class CoreLogic:
-    def __init__(self, bot: "Red"):
+    def __init__(self, bot: "Slave"):
         self.bot = bot
         self.bot.register_rpc_handler(self._load)
         self.bot.register_rpc_handler(self._unload)
@@ -290,7 +290,7 @@ class Core(commands.Cog, CoreLogic):
         """Shows info about Slave"""
         author_repo = "https://github.com/JACKMATHEDEB/"
         org_repo = "https://github.com/JACKMATHEDEB"
-        red_repo = org_repo + "/Red"
+        red_repo = org_repo + "/Slave"
         red_pypi = "https://pypi.python.org/pypi/tryingtogetone"
         support_server_url = "https://discord.gg/nyZyZW"
         dpy_repo = "https://github.com/Rapptz/discord.py"
@@ -451,7 +451,7 @@ class Core(commands.Cog, CoreLogic):
     @commands.command()
     @commands.check(CoreLogic._can_get_invite_url)
     async def invite(self, ctx):
-        """Show's Red's invite url"""
+        """Show's Slave's invite url"""
         await ctx.author.send(await self._invite_url())
 
     @commands.group()
@@ -822,7 +822,7 @@ class Core(commands.Cog, CoreLogic):
     @_set.command()
     @checks.is_owner()
     async def avatar(self, ctx: commands.Context, url: str):
-        """Sets Red's avatar"""
+        """Sets Slave's avatar"""
         async with aiohttp.ClientSession() as session:
             async with session.get(url) as r:
                 data = await r.read()
@@ -888,7 +888,7 @@ class Core(commands.Cog, CoreLogic):
     @checks.bot_in_a_guild()
     @checks.is_owner()
     async def status(self, ctx: commands.Context, *, status: str):
-        """Sets Red's status
+        """Sets Slave's status
 
         Available statuses:
             online
@@ -917,7 +917,7 @@ class Core(commands.Cog, CoreLogic):
     @checks.bot_in_a_guild()
     @checks.is_owner()
     async def stream(self, ctx: commands.Context, streamer=None, *, stream_title=None):
-        """Sets Red's streaming status
+        """Sets Slave's streaming status
         Leaving both streamer and stream_title empty will clear it."""
 
         status = ctx.bot.guilds[0].me.status if len(ctx.bot.guilds) > 0 else None
@@ -938,7 +938,7 @@ class Core(commands.Cog, CoreLogic):
     @_set.command(name="username", aliases=["name"])
     @checks.is_owner()
     async def _username(self, ctx: commands.Context, *, username: str):
-        """Sets Red's username"""
+        """Sets Slave's username"""
         try:
             await self._name(name=username)
         except discord.HTTPException:
@@ -957,7 +957,7 @@ class Core(commands.Cog, CoreLogic):
     @checks.admin()
     @commands.guild_only()
     async def _nickname(self, ctx: commands.Context, *, nickname: str = None):
-        """Sets Red's nickname"""
+        """Sets Slave's nickname"""
         try:
             await ctx.guild.me.edit(nick=nickname)
         except discord.Forbidden:
@@ -968,7 +968,7 @@ class Core(commands.Cog, CoreLogic):
     @_set.command(aliases=["prefixes"])
     @checks.is_owner()
     async def prefix(self, ctx: commands.Context, *prefixes: str):
-        """Sets Red's global prefix(es)"""
+        """Sets Slave's global prefix(es)"""
         if not prefixes:
             await ctx.send_help()
             return
@@ -979,7 +979,7 @@ class Core(commands.Cog, CoreLogic):
     @checks.admin()
     @commands.guild_only()
     async def serverprefix(self, ctx: commands.Context, *prefixes: str):
-        """Sets Red's server prefix(es)"""
+        """Sets Slave's server prefix(es)"""
         if not prefixes:
             await ctx.bot.db.guild(ctx.guild).prefix.set([])
             await ctx.send(_("Guild prefixes have been reset."))
@@ -991,7 +991,7 @@ class Core(commands.Cog, CoreLogic):
     @_set.command()
     @commands.cooldown(1, 60 * 10, commands.BucketType.default)
     async def owner(self, ctx: commands.Context):
-        """Sets Red's main owner"""
+        """Sets Slave's main owner"""
         # According to the Python docs this is suitable for cryptographic use
         random = SystemRandom()
         length = random.randint(25, 35)
@@ -1073,7 +1073,7 @@ class Core(commands.Cog, CoreLogic):
 
         To reset to English, use "en-US".
         """
-        red_dist = pkg_resources.get_distribution("red-discordbot")
+        red_dist = pkg_resources.get_distribution("Slave-discordbot")
         red_path = Path(red_dist.location) / "Thinslaves"
         locale_list = [loc.stem.lower() for loc in list(red_path.glob("**/*.po"))]
         if locale_name.lower() in locale_list or locale_name.lower() == "en-us":
@@ -1278,7 +1278,7 @@ class Core(commands.Cog, CoreLogic):
         Use `[p]set locale` to set a locale
         """
         async with ctx.channel.typing():
-            red_dist = pkg_resources.get_distribution("red-discordbot")
+            red_dist = pkg_resources.get_distribution("Slave-discordbot")
             red_path = Path(red_dist.location) / "Thinslaves"
             locale_list = [loc.stem for loc in list(red_path.glob("**/*.po"))]
             locale_list.append("en-US")
@@ -1321,7 +1321,7 @@ class Core(commands.Cog, CoreLogic):
                     output = item
                     target = JSON(c_name, item_id, data_path_override=c_data_path)
                     await target.jsonIO._threadsafe_save_json(output)
-        backup_filename = "redv3-{}-{}.tar.gz".format(
+        backup_filename = "Slavev3-{}-{}.tar.gz".format(
             instance_name, ctx.message.created_at.strftime("%Y-%m-%d %H-%M-%S")
         )
         if data_dir.exists():
@@ -1587,7 +1587,7 @@ class Core(commands.Cog, CoreLogic):
 
         if await ctx.embed_requested():
             e = discord.Embed(color=await ctx.embed_colour())
-            e.title = "Debug Info for Red"
+            e.title = "Debug Info for Slave"
             e.add_field(name="Slave version", value=redver, inline=True)
             e.add_field(name="Python version", value=pyver, inline=True)
             e.add_field(name="Discord.py version", value=dpy_version, inline=True)
@@ -1598,7 +1598,7 @@ class Core(commands.Cog, CoreLogic):
             await ctx.send(embed=e)
         else:
             info = (
-                "Debug Info for Red\n\n"
+                "Debug Info for Slave\n\n"
                 + "Slave version: {}\n".format(redver)
                 + "Python version: {}\n".format(pyver)
                 + "Discord.py version: {}\n".format(dpy_version)
