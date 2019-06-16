@@ -24,12 +24,11 @@ log = logging.getLogger("red")
 init()
 
 INTRO = """
-______         _           ______ _                       _  ______       _
-| ___ \       | |          |  _  (_)                     | | | ___ \     | |
-| |_/ /___  __| |  ______  | | | |_ ___  ___ ___  _ __ __| | | |_/ / ___ | |_
-|    // _ \/ _` | |______| | | | | / __|/ __/ _ \| '__/ _` | | ___ \/ _ \| __|
-| |\ \  __/ (_| |          | |/ /| \__ \ (_| (_) | | | (_| | | |_/ / (_) | |_
-\_| \_\___|\__,_|          |___/ |_|___/\___\___/|_|  \__,_| \____/ \___/ \__|
+|         |         |
+|         |         |
+|||||||||||         |
+|         |         |
+|         |         |
 """
 
 
@@ -98,7 +97,7 @@ def init_events(bot, cli_flags):
             str(bot.user),
             "Prefixes: {}".format(", ".join(prefixes)),
             "Language: {}".format(lang),
-            "Red Bot Version: {}".format(red_version),
+            "Thinslave Version: {}".format(red_version),
             "Discord.py Version: {}".format(dpy_version),
             "Shards: {}".format(bot.shard_count),
         ]
@@ -141,8 +140,7 @@ def init_events(bot, cli_flags):
 
         options = (
             ("MongoDB", mongo_enabled),
-            ("Voice", True),
-            ("Docs", reqs_installed["docs"]),
+            ("Voice", True
             ("Tests", reqs_installed["test"]),
         )
 
