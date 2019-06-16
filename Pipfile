@@ -4,8 +4,8 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-Thinslave-DiscordBot = {path = ".",editable = true,extras = ['mongo']}
+red-discordbot = {path = ".",editable = true,extras = ['mongo']}
 
 [dev-packages]
 tox = "*"
-Thinslave-DiscordBot = {path = ".",editable = true,extras = ['docs', 'test', 'style', 'mongo']}
+red-discordbot = {path = ".",editable = true,extras = ['docs', 'test', 'style', 'mongo']}

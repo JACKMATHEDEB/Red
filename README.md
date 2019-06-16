@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="https://github.com/Thinmatrix/Thinslave-DiscordBot/tree/V3/develop"><img src="https://imgur.com/pY1WUFX.png" alt="Red - Discord Bot"></a>
+  <a href="https://github.com/Cog-Creators/Red-DiscordBot/tree/V3/develop"><img src="https://imgur.com/pY1WUFX.png" alt="Red - Discord Bot"></a>
   <br>
   Red Discord Bot
   <br>
@@ -9,14 +9,28 @@
 <h4 align="center">Music, Moderation, Trivia, Stream Alerts and Fully Modular.</h4>
 
 <p align="center">
-  
+  <a href="https://discord.gg/red">
+    <img src="https://discordapp.com/api/guilds/133049272517001216/widget.png?style=shield" alt="Discord Server">
+  </a>
+  <a href="https://www.patreon.com/Red_Devs">
+    <img src="https://img.shields.io/badge/Support-Red!-yellow.svg" alt="Support Red on Patreon!">
+  </a>
+  <a href="https://www.python.org/downloads/">
+    <img src="https://img.shields.io/badge/Made%20With-Python%203.7-blue.svg?style=for-the-badge" alt="Made with Python 3.7">
+  </a>
+  <a href="https://crowdin.com/project/red-discordbot">
+    <img src="https://d322cqt584bo4o.cloudfront.net/red-discordbot/localized.svg" alt="Localized with Crowdin">
+  </a>
+  <a href="https://github.com/Rapptz/discord.py/tree/rewrite">
+      <img src="https://img.shields.io/badge/discord-py-blue.svg" alt="discord.py">
+  </a>
 </p>
 <p align="center">
-  <a href="https://travis-ci.com/Thinmatrix/Thinslave-DiscordBot">
-    <img src="https://api.travis-ci.com/Thinmatrix/Thinslave-DiscordBot.svg?branch=V3/develop" alt="Travis CI">
+  <a href="https://travis-ci.com/Cog-Creators/Red-DiscordBot">
+    <img src="https://api.travis-ci.com/Cog-Creators/Red-DiscordBot.svg?branch=V3/develop" alt="Travis CI">
   </a>
-  <a href="http://Thinslave-DiscordBot.readthedocs.io/en/v3-develop/?badge=v3-develop">
-    <img src="https://readthedocs.org/projects/Thinslave-DiscordBot/badge/?version=v3-develop" alt="Red on readthedocs.org">
+  <a href="http://red-discordbot.readthedocs.io/en/v3-develop/?badge=v3-develop">
+    <img src="https://readthedocs.org/projects/red-discordbot/badge/?version=v3-develop" alt="Red on readthedocs.org">
   </a>
   <a href="https://github.com/ambv/black">
     <img src="https://img.shields.io/badge/code%20style-black-000000.svg" alt="Code Style: Black">
@@ -29,8 +43,9 @@
 <p align="center">
   <a href="#overview">Overview</a>
   •
-  
-  <a href="http://Thinslave-DiscordBot.readthedocs.io/en/v3-develop/index.html">Documentation</a>
+  <a href="#installation">Installation</a>
+  •
+  <a href="http://red-discordbot.readthedocs.io/en/v3-develop/index.html">Documentation</a>
   •
   <a href="#plugins">Plugins</a>
   •
@@ -68,13 +83,13 @@ community of cog repositories.**
 
 **The following platforms are officially supported:** 
 
-- [Windows](https://Thinslave-DiscordBot.readthedocs.io/en/v3-develop/install_windows.html)
-- [MacOS](https://Thinslave-DiscordBot.readthedocs.io/en/v3-develop/install_linux_mac.html)
-- [Ubuntu](https://Thinslave-DiscordBot.readthedocs.io/en/v3-develop/install_linux_mac.html)
-- [Debian Stretch](https://Thinslave-DiscordBot.readthedocs.io/en/v3-develop/install_linux_mac.html)
-- [CentOS 7](https://Thinslave-DiscordBot.readthedocs.io/en/v3-develop/install_linux_mac.html)
-- [Arch Linux](https://Thinslave-DiscordBot.readthedocs.io/en/v3-develop/install_linux_mac.html)
-- [Raspbian Stretch](https://Thinslave-DiscordBot.readthedocs.io/en/v3-develop/install_linux_mac.html)
+- [Windows](https://red-discordbot.readthedocs.io/en/v3-develop/install_windows.html)
+- [MacOS](https://red-discordbot.readthedocs.io/en/v3-develop/install_linux_mac.html)
+- [Ubuntu](https://red-discordbot.readthedocs.io/en/v3-develop/install_linux_mac.html)
+- [Debian Stretch](https://red-discordbot.readthedocs.io/en/v3-develop/install_linux_mac.html)
+- [CentOS 7](https://red-discordbot.readthedocs.io/en/v3-develop/install_linux_mac.html)
+- [Arch Linux](https://red-discordbot.readthedocs.io/en/v3-develop/install_linux_mac.html)
+- [Raspbian Stretch](https://red-discordbot.readthedocs.io/en/v3-develop/install_linux_mac.html)
 
 
 If after reading the guide you are still experiencing issues, feel free to join the
@@ -102,7 +117,7 @@ available 3rd party cogs!
 **Red** is in continuous development, and it’s supported by an active community which produces new
 content (cogs/plugins) for everyone to enjoy. New features are constantly added. If you can’t
 [find](https://cogboard.red/t/approved-repositories/210) the cog you’re looking for,
-consult our [guide](https://Thinslave-DiscordBot.readthedocs.io/en/v3-develop/guide_cog_creation.html) on
+consult our [guide](https://red-discordbot.readthedocs.io/en/v3-develop/guide_cog_creation.html) on
 building your own cogs!
 
 Join us on our [Official Discord Server](https://discord.gg/red)!

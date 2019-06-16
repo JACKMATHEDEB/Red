@@ -2,7 +2,7 @@ import yaml
 
 
 def test_trivia_lists():
-    from Thinslave.cogs.trivia import get_core_lists
+    from redbot.cogs.trivia import get_core_lists
 
     list_names = get_core_lists()
     assert list_names

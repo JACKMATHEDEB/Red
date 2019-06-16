@@ -3,8 +3,8 @@ from pathlib import Path
 
 import pytest
 
-from Thinslave.pytest.data_manager import *
-from Thinslave.core import data_manager
+from redbot.pytest.data_manager import *
+from redbot.core import data_manager
 
 
 def test_no_basic(cog_instance):

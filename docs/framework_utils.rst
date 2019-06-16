@@ -7,47 +7,47 @@ Utility Functions
 General Utility
 ===============
 
-.. automodule:: Thinslave.core.utils
+.. automodule:: redbot.core.utils
     :members: deduplicate_iterables, bounded_gather, bounded_gather_iter
 
 Chat Formatting
 ===============
 
-.. automodule:: Thinslave.core.utils.chat_formatting
+.. automodule:: redbot.core.utils.chat_formatting
     :members:
 
 Embed Helpers
 =============
 
-.. automodule:: Thinslave.core.utils.embed
+.. automodule:: redbot.core.utils.embed
     :members:
 
 Reaction Menus
 ==============
 
-.. automodule:: Thinslave.core.utils.menus
+.. automodule:: redbot.core.utils.menus
     :members:
 
 Event Predicates
 ================
 
-.. automodule:: Thinslave.core.utils.predicates
+.. automodule:: redbot.core.utils.predicates
     :members:
 
 Mod Helpers
 ===========
 
-.. automodule:: Thinslave.core.utils.mod
+.. automodule:: redbot.core.utils.mod
     :members:
 
 Tunnel
 ======
 
-.. automodule:: Thinslave.core.utils.tunnel
+.. automodule:: redbot.core.utils.tunnel
     :members: Tunnel
 
 Common Filters
 ==============
 
-.. automodule:: Thinslave.core.utils.common_filters
+.. automodule:: redbot.core.utils.common_filters
     :members:

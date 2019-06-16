@@ -1,5 +1,5 @@
-from Thinslave import core
-from Thinslave.core import VersionInfo
+from redbot import core
+from redbot.core import VersionInfo
 
 
 def test_version_working():

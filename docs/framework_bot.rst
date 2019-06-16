@@ -4,7 +4,7 @@
 Bot
 ===
 
-.. automodule:: Thinslave.core.bot
+.. automodule:: redbot.core.bot
 
 RedBase
 ^^^^^^^

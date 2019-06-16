@@ -56,15 +56,15 @@ source_suffix = ".rst"
 master_doc = "index"
 
 # General information about the project.
-project = "Thinslave - Discord Bot"
-copyright = "2019, Thin"
-author = "Thin"
+project = "Red - Discord Bot"
+copyright = "2018, Cog Creators"
+author = "Cog Creators"
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 #
-from Thinslave.core import __version__
+from redbot.core import __version__
 
 # The short X.Y version.
 version = __version__
@@ -109,8 +109,8 @@ html_theme = "sphinx_rtd_theme"
 html_context = {
     # Enable the "Edit in GitHub link within the header of each page.
     "display_github": True,
-    "github_user": "Thinmatrix",
-    "github_repo": "Thinslave-DiscordBot",
+    "github_user": "Cog-Creators",
+    "github_repo": "Red-DiscordBot",
     "github_version": "V3/develop/docs/",
 }
 
@@ -138,7 +138,7 @@ html_sidebars = {
 # -- Options for HTMLHelp output ------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = "Thinslave-DiscordBotdoc"
+htmlhelp_basename = "Red-DiscordBotdoc"
 
 
 # -- Options for LaTeX output ---------------------------------------------
@@ -162,7 +162,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, "Thinslave-DiscordBot.tex", "Thinslave - Discord Bot Documentation", "Cog Creators", "manual")
+    (master_doc, "Red-DiscordBot.tex", "Red - Discord Bot Documentation", "Cog Creators", "manual")
 ]
 
 
@@ -170,7 +170,7 @@ latex_documents = [
 
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
-man_pages = [(master_doc, "Thinslave-DiscordBot", "Thinslave - Discord Bot Documentation", [author], 1)]
+man_pages = [(master_doc, "red-discordbot", "Red - Discord Bot Documentation", [author], 1)]
 
 
 # -- Options for Texinfo output -------------------------------------------
@@ -181,10 +181,10 @@ man_pages = [(master_doc, "Thinslave-DiscordBot", "Thinslave - Discord Bot Docum
 texinfo_documents = [
     (
         master_doc,
-        "Thinslave-DiscordBot",
-        "Thins - Discord Botn",
+        "Red-DiscordBot",
+        "Red - Discord Bot Documentation",
         author,
-        "Thinslave-DiscordBot",
+        "Red-DiscordBot",
         "One line description of project.",
         "Miscellaneous",
     )

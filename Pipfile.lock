@@ -265,7 +265,7 @@
             ],
             "version": "==3.13"
         },
-        "Thinslave-DiscordBot": {
+        "red-discordbot": {
             "editable": true,
             "extras": [
                 "mongo"
@@ -741,7 +741,7 @@
             ],
             "version": "==3.13"
         },
-        "Thinslave-DiscordBot": {
+        "red-discordbot": {
             "editable": true,
             "extras": [
                 "mongo"

@@ -6,7 +6,7 @@ stylecheck:
 
 # Translations
 gettext:
-	redgettext --command-docstrings --verbose --recursive Thinslave --exclude-files "Thinslave/pytest/**/*"
+	redgettext --command-docstrings --verbose --recursive redbot --exclude-files "redbot/pytest/**/*"
 upload_translations:
 	$(MAKE) gettext
 	crowdin upload sources

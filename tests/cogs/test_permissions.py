@@ -1,4 +1,4 @@
-from Thinslave.cogs.permissions.permissions import Permissions, GLOBAL
+from redbot.cogs.permissions.permissions import Permissions, GLOBAL
 
 
 def test_schema_update():

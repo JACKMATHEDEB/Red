@@ -66,22 +66,22 @@ Installing Red
 
     .. code-block:: none
 
-        python -m pip install -U Thinslave-DiscordBot
+        python -m pip install -U Red-DiscordBot
 
   * With MongoDB support:
 
     .. code-block:: none
 
-        python -m pip install -U Thinslave-DiscordBot[mongo]
+        python -m pip install -U Red-DiscordBot[mongo]
 
   .. note::
 
-      To install the development version, replace ``Thinslave-DiscordBot`` in the above commands with the
+      To install the development version, replace ``Red-DiscordBot`` in the above commands with the
       following link:
 
       .. code-block:: none
 
-          git+https://github.com/Thinmatrix/Thinslave-DiscordBot@V3/develop#egg=Thinslave-DiscordBot
+          git+https://github.com/Cog-Creators/Red-DiscordBot@V3/develop#egg=Red-DiscordBot
 
 --------------------------
 Setting Up and Running Red
@@ -91,7 +91,7 @@ After installation, set up your instance with the following command:
 
 .. code-block:: none
 
-    Thinslave-setup
+    redbot-setup
 
 This will set the location where data will be stored, as well as your
 storage backend and the name of the instance (which will be used for
@@ -101,7 +101,7 @@ Once done setting up the instance, run the following command to run Red:
 
 .. code-block:: none
 
-    Thinslave <your instance name>
+    redbot <your instance name>
 
 It will walk through the initial setup, asking for your token and a prefix.
 You can find out how to obtain a token with
@@ -114,4 +114,4 @@ launcher menu. Use the following command to run the launcher:
 
 .. code-block:: none
 
-    Thinslave-launcher
+    redbot-launcher

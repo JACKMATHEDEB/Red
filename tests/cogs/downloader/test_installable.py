@@ -3,9 +3,9 @@ from pathlib import Path
 
 import pytest
 
-from Thinslave.pytest.downloader import *
-from Thinslave.cogs.downloader.installable import Installable, InstallableType
-from Thinslave.core import VersionInfo
+from redbot.pytest.downloader import *
+from redbot.cogs.downloader.installable import Installable, InstallableType
+from redbot.core import VersionInfo
 
 
 def test_process_info_file(installable):

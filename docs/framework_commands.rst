@@ -9,18 +9,18 @@ all of the attributes from discord.py's are also in ours.
 Some of these attributes, however, have been slightly modified, while others have been added to
 extend functionlities used throughout the bot, as outlined below.
 
-.. autofunction:: Thinslave.core.commands.command
+.. autofunction:: redbot.core.commands.command
 
-.. autofunction:: Thinslave.core.commands.group
+.. autofunction:: redbot.core.commands.group
 
-.. autoclass:: Thinslave.core.commands.Command
+.. autoclass:: redbot.core.commands.Command
     :members:
 
-.. autoclass:: Thinslave.core.commands.Group
+.. autoclass:: redbot.core.commands.Group
     :members:
 
-.. autoclass:: Thinslave.core.commands.Context
+.. autoclass:: redbot.core.commands.Context
     :members:
 
-.. automodule:: Thinslave.core.commands.requires
+.. automodule:: redbot.core.commands.requires
     :members: PrivilegeLevel, PermState, Requires
