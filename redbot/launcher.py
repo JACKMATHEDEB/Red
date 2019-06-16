@@ -8,16 +8,16 @@ import asyncio
 import aiohttp
 
 import pkg_resources
-from redbot import MIN_PYTHON_VERSION
-from redbot.setup import (
+from Thinslaves import MIN_PYTHON_VERSION
+from Thinslaves.setup import (
     basic_setup,
     load_existing_config,
     remove_instance,
     remove_instance_interaction,
     create_backup,
 )
-from redbot.core import __version__, version_info as red_version_info, VersionInfo
-from redbot.core.cli import confirm
+from Thinslaves.core import __version__, version_info as red_version_info, VersionInfo
+from Thinslaves.core.cli import confirm
 
 if sys.platform == "linux":
     import distro
@@ -80,14 +80,14 @@ def parse_cli_args():
 def update_red(dev=False, style=False, mongo=False, docs=False, test=False):
     interpreter = sys.executable
     print("Updating Red...")
-    # If the user ran redbot-launcher.exe, updating with pip will fail
+    # If the user ran Thinslaves-launcher.exe, updating with pip will fail
     # on windows since the file is open and pip will try to overwrite it.
-    # We have to rename redbot-launcher.exe in this case.
+    # We have to rename Thinslaves-launcher.exe in this case.
     launcher_script = os.path.abspath(sys.argv[0])
     old_name = launcher_script + ".exe"
     new_name = launcher_script + ".old"
     renamed = False
-    if "redbot-launcher" in launcher_script and IS_WINDOWS:
+    if "Thinslaves-launcher" in launcher_script and IS_WINDOWS:
         renamed = True
         print("Renaming {} to {}".format(old_name, new_name))
         if os.path.exists(new_name):
@@ -119,9 +119,9 @@ def update_red(dev=False, style=False, mongo=False, docs=False, test=False):
     else:
         print("Something went wrong while updating!")
 
-    # If redbot wasn't updated, we renamed our .exe file and didn't replace it
+    # If Thinslaves wasn't updated, we renamed our .exe file and didn't replace it
     scripts = os.listdir(os.path.dirname(launcher_script))
-    if renamed and "redbot-launcher.exe" not in scripts:
+    if renamed and "Thinslaves-launcher.exe" not in scripts:
         print("Renaming {} to {}".format(new_name, old_name))
         os.rename(new_name, old_name)
 
@@ -130,7 +130,7 @@ def run_red(selected_instance, autorestart: bool = False, cliflags=None):
     interpreter = sys.executable
     while True:
         print("Starting {}...".format(selected_instance))
-        cmd_list = [interpreter, "-m", "redbot", selected_instance]
+        cmd_list = [interpreter, "-m", "Thinslaves", selected_instance]
         if cliflags:
             cmd_list += cliflags
         status = subprocess.call(cmd_list)
@@ -139,7 +139,7 @@ def run_red(selected_instance, autorestart: bool = False, cliflags=None):
 
 
 def cli_flag_getter():
-    print("Would you like to enter any cli flags to pass to redbot? (y/n)")
+    print("Would you like to enter any cli flags to pass to Thinslaves? (y/n)")
     resp = user_choice()
     if resp == "n":
         return None

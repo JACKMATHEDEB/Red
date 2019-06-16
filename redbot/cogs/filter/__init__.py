@@ -1,5 +1,5 @@
 from .filter import Filter
-from redbot.core.bot import Red
+from Thinslaves.core.bot import Red
 
 
 def setup(bot: Red):

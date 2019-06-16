@@ -2,10 +2,10 @@ import discord
 import re
 from typing import Union, Set
 
-from redbot.core import checks, Config, modlog, commands
-from redbot.core.bot import Red
-from redbot.core.i18n import Translator, cog_i18n
-from redbot.core.utils.chat_formatting import pagify
+from Thinslaves.core import checks, Config, modlog, commands
+from Thinslaves.core.bot import Red
+from Thinslaves.core.i18n import Translator, cog_i18n
+from Thinslaves.core.utils.chat_formatting import pagify
 
 _ = Translator("Filter", __file__)
 

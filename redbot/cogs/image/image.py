@@ -2,8 +2,8 @@ from random import shuffle
 
 import aiohttp
 
-from redbot.core.i18n import Translator, cog_i18n
-from redbot.core import checks, Config, commands
+from Thinslaves.core.i18n import Translator, cog_i18n
+from Thinslaves.core import checks, Config, commands
 
 _ = Translator("Image", __file__)
 

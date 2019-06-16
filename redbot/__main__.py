@@ -9,16 +9,16 @@ import sys
 
 import discord
 
-import redbot.logging
-from redbot.core.bot import Red, ExitCodes
-from redbot.core.cog_manager import CogManagerUI
-from redbot.core.json_io import JsonIO
-from redbot.core.global_checks import init_global_checks
-from redbot.core.events import init_events
-from redbot.core.cli import interactive_config, confirm, parse_cli_flags
-from redbot.core.core_commands import Core
-from redbot.core.dev_commands import Dev
-from redbot.core import __version__, modlog, bank, data_manager
+import Thinslaves.logging
+from Thinslaves.core.bot import Red, ExitCodes
+from Thinslaves.core.cog_manager import CogManagerUI
+from Thinslaves.core.json_io import JsonIO
+from Thinslaves.core.global_checks import init_global_checks
+from Thinslaves.core.events import init_events
+from Thinslaves.core.cli import interactive_config, confirm, parse_cli_flags
+from Thinslaves.core.core_commands import Core
+from Thinslaves.core.dev_commands import Dev
+from Thinslaves.core import __version__, modlog, bank, data_manager
 from signal import SIGTERM
 
 # Let's not force this dependency, uvloop is much faster on cpython
@@ -57,7 +57,7 @@ def list_instances():
     if not data_manager.config_file.exists():
         print(
             "No instances have been configured! Configure one "
-            "using `redbot-setup` before trying to run the bot!"
+            "using `Thinslaves-setup` before trying to run the bot!"
         )
         sys.exit(1)
     else:
@@ -96,7 +96,7 @@ def main():
         cli_flags.instance_name = "temporary_red"
         data_manager.create_temp_config()
     data_manager.load_basic_configuration(cli_flags.instance_name)
-    redbot.logging.init_logging(
+    Thinslaves.logging.init_logging(
         level=cli_flags.logging_level, location=data_manager.core_data_path() / "logs"
     )
 

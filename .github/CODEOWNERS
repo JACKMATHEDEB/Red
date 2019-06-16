@@ -2,59 +2,59 @@
 *                                   @Twentysix26
 
 # Core
-redbot/core/bank.py                      @palmtree5
-redbot/core/checks.py                    @tekulvw
-redbot/core/cli.py                       @tekulvw
-redbot/core/config.py                    @tekulvw
-redbot/core/cog_manager.py               @tekulvw
-redbot/core/core_commands.py             @tekulvw
-redbot/core/context.py                   @Tobotimus
-redbot/core/commands/*                   @mikeshardmind
-redbot/core/data_manager.py              @tekulvw
-redbot/core/dev_commands.py              @tekulvw
-redbot/core/drivers/*                    @tekulvw
-redbot/core/events.py                    @tekulvw
-redbot/core/global_checks.py             @tekulvw
-redbot/core/i18n.py                      @tekulvw
-redbot/core/json_io.py                   @tekulvw
-redbot/core/modlog.py                    @palmtree5
-redbot/core/rpc.py                       @tekulvw
-redbot/core/utils/chat_formatting.py     @tekulvw
-redbot/core/utils/mod.py                 @palmtree5
-redbot/core/utils/data_converter.py      @mikeshardmind
-redbot/core/utils/antispam.py            @mikeshardmind
-redbot/core/utils/tunnel.py              @mikeshardmind
-redbot/core/utils/caching.py             @mikeshardmind
-redbot/core/utils/common_filters.py      @mikeshardmind
+Thinslaves/core/bank.py                      @palmtree5
+Thinslaves/core/checks.py                    @tekulvw
+Thinslaves/core/cli.py                       @tekulvw
+Thinslaves/core/config.py                    @tekulvw
+Thinslaves/core/cog_manager.py               @tekulvw
+Thinslaves/core/core_commands.py             @tekulvw
+Thinslaves/core/context.py                   @Tobotimus
+Thinslaves/core/commands/*                   @mikeshardmind
+Thinslaves/core/data_manager.py              @tekulvw
+Thinslaves/core/dev_commands.py              @tekulvw
+Thinslaves/core/drivers/*                    @tekulvw
+Thinslaves/core/events.py                    @tekulvw
+Thinslaves/core/global_checks.py             @tekulvw
+Thinslaves/core/i18n.py                      @tekulvw
+Thinslaves/core/json_io.py                   @tekulvw
+Thinslaves/core/modlog.py                    @palmtree5
+Thinslaves/core/rpc.py                       @tekulvw
+Thinslaves/core/utils/chat_formatting.py     @tekulvw
+Thinslaves/core/utils/mod.py                 @palmtree5
+Thinslaves/core/utils/data_converter.py      @mikeshardmind
+Thinslaves/core/utils/antispam.py            @mikeshardmind
+Thinslaves/core/utils/tunnel.py              @mikeshardmind
+Thinslaves/core/utils/caching.py             @mikeshardmind
+Thinslaves/core/utils/common_filters.py      @mikeshardmind
 
 # Cogs
-redbot/cogs/admin/*                 @tekulvw
-redbot/cogs/alias/*                 @tekulvw
-redbot/cogs/audio/*                 @aikaterna
-redbot/cogs/bank/*                  @tekulvw
-redbot/cogs/cleanup/*               @palmtree5
-redbot/cogs/customcom/*             @palmtree5
-redbot/cogs/downloader/*            @tekulvw
-redbot/cogs/economy/*               @palmtree5
-redbot/cogs/filter/*                @palmtree5
-redbot/cogs/general/*               @palmtree5
-redbot/cogs/image/*                 @palmtree5
-redbot/cogs/mod/*                   @palmtree5
-redbot/cogs/modlog/*                @palmtree5
-redbot/cogs/streams/*               @Twentysix26 @palmtree5
-redbot/cogs/trivia/*                @Tobotimus
-redbot/cogs/reports/*               @mikeshardmind
-redbot/cogs/permissions/*           @mikeshardmind
-redbot/cogs/warnings/*              @palmtree5
+Thinslaves/cogs/admin/*                 @tekulvw
+Thinslaves/cogs/alias/*                 @tekulvw
+Thinslaves/cogs/audio/*                 @aikaterna
+Thinslaves/cogs/bank/*                  @tekulvw
+Thinslaves/cogs/cleanup/*               @palmtree5
+Thinslaves/cogs/customcom/*             @palmtree5
+Thinslaves/cogs/downloader/*            @tekulvw
+Thinslaves/cogs/economy/*               @palmtree5
+Thinslaves/cogs/filter/*                @palmtree5
+Thinslaves/cogs/general/*               @palmtree5
+Thinslaves/cogs/image/*                 @palmtree5
+Thinslaves/cogs/mod/*                   @palmtree5
+Thinslaves/cogs/modlog/*                @palmtree5
+Thinslaves/cogs/streams/*               @Twentysix26 @palmtree5
+Thinslaves/cogs/trivia/*                @Tobotimus
+Thinslaves/cogs/reports/*               @mikeshardmind
+Thinslaves/cogs/permissions/*           @mikeshardmind
+Thinslaves/cogs/warnings/*              @palmtree5
 
 # Docs
 docs/*                              @tekulvw @palmtree5
 
 # Setup, instance setup, and running the bot
 setup.py                            @tekulvw
-redbot/__init__.py                  @tekulvw
-redbot/__main__.py                  @tekulvw
-redbot/setup.py                     @tekulvw
+Thinslaves/__init__.py                  @tekulvw
+Thinslaves/__main__.py                  @tekulvw
+Thinslaves/setup.py                     @tekulvw
 
 # Others
 .travis.yml                         @Kowlin

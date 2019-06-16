@@ -5,11 +5,11 @@ from typing import Union, List, Callable, Set
 
 import discord
 
-from redbot.core import checks, commands
-from redbot.core.bot import Red
-from redbot.core.i18n import Translator, cog_i18n
-from redbot.core.utils.mod import slow_deletion, mass_purge
-from redbot.core.utils.predicates import MessagePredicate
+from Thinslaves.core import checks, commands
+from Thinslaves.core.bot import Red
+from Thinslaves.core.i18n import Translator, cog_i18n
+from Thinslaves.core.utils.mod import slow_deletion, mass_purge
+from Thinslaves.core.utils.predicates import MessagePredicate
 from .converters import RawMessageIds
 
 _ = Translator("Cleanup", __file__)

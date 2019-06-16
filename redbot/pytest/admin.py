@@ -2,8 +2,8 @@ from unittest.mock import MagicMock
 
 import pytest
 
-from redbot.cogs.admin import Admin
-from redbot.cogs.admin.announcer import Announcer
+from Thinslaves.cogs.admin import Admin
+from Thinslaves.cogs.admin.announcer import Announcer
 
 __all__ = ["admin", "announcer"]
 

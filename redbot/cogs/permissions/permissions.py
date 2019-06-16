@@ -7,12 +7,12 @@ from typing import Union, Optional, Dict, List, Tuple, Any, Iterator, ItemsView,
 import discord
 import yaml
 from schema import And, Or, Schema, SchemaError, Optional as UseOptional
-from redbot.core import checks, commands, config
-from redbot.core.bot import Red
-from redbot.core.i18n import Translator, cog_i18n
-from redbot.core.utils.chat_formatting import box
-from redbot.core.utils.menus import start_adding_reactions
-from redbot.core.utils.predicates import ReactionPredicate, MessagePredicate
+from Thinslaves.core import checks, commands, config
+from Thinslaves.core.bot import Red
+from Thinslaves.core.i18n import Translator, cog_i18n
+from Thinslaves.core.utils.chat_formatting import box
+from Thinslaves.core.utils.menus import start_adding_reactions
+from Thinslaves.core.utils.predicates import ReactionPredicate, MessagePredicate
 
 from .converters import (
     CogOrCommand,

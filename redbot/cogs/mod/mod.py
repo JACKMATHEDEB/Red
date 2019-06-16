@@ -3,9 +3,9 @@ from typing import List, Tuple
 from abc import ABC
 
 import discord
-from redbot.core import Config, modlog, commands
-from redbot.core.bot import Red
-from redbot.core.i18n import Translator, cog_i18n
+from Thinslaves.core import Config, modlog, commands
+from Thinslaves.core.bot import Red
+from Thinslaves.core.i18n import Translator, cog_i18n
 from .casetypes import CASETYPES
 from .events import Events
 from .kickban import KickBanMixin

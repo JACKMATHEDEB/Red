@@ -12,9 +12,9 @@ from string import Formatter
 from sys import executable
 from typing import List, Tuple, Iterable, MutableMapping, Union, Optional
 
-from redbot.core import data_manager, commands
-from redbot.core.utils import safe_delete
-from redbot.core.i18n import Translator
+from Thinslaves.core import data_manager, commands
+from Thinslaves.core.utils import safe_delete
+from Thinslaves.core.i18n import Translator
 
 from . import errors
 from .installable import Installable, InstallableType

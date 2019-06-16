@@ -16,36 +16,36 @@ msgstr ""
 "X-Crowdin-File: /cogs/admin/locales/messages.pot\n"
 "Language: ar_SA\n"
 
-#: redbot/cogs/admin/admin.py:17
+#: Thinslaves/cogs/admin/admin.py:17
 msgid "I attempted to do something that Discord denied me permissions for. Your command failed to successfully complete."
 msgstr "حاولت القيام بشيء لا أملك تصريح من ديسكورد لفعله. فشل أمرك في إكمال نجاحه."
 
-#: redbot/cogs/admin/admin.py:22
+#: Thinslaves/cogs/admin/admin.py:22
 msgid "I tried to add {role.name} to {member.display_name} but that role is higher than my highest role in the Discord hierarchy so I was unable to successfully add it. Please give me a higher role and try again."
 msgstr "حاولت إضافة {role.name} إلى {member.display_name} ولكن هذه الرتبة هي أعلى من رتبتي في قائمة الرتب في السيرفر, لذلك فشل الأمر. حاول رفع رتبتي والمحاولة مجدداً."
 
-#: redbot/cogs/admin/admin.py:29
+#: Thinslaves/cogs/admin/admin.py:29
 msgid "I tried to add {role.name} to {member.display_name} but that role is higher than your highest role in the Discord hierarchy so I was unable to successfully add it. Please get a higher role and try again."
 msgstr "لقد حاولت إضافة {role.name} إلى {member.display_name} ولكن هذه الرتبة هي أعلى من رتبتك في قائمة الرتب في السيرفر, لذلك فشل الأمر. حاول رفع رتبتي والمحاولة مجدداً."
 
-#: redbot/cogs/admin/admin.py:36
+#: Thinslaves/cogs/admin/admin.py:36
 msgid "I am already announcing something. If you would like to make a different announcement please use `{prefix}announce cancel` first."
 msgstr "أنا بالفعل أُعلن شيئاً. إذا كنت ترغب في إصدار إعلان مختلف الرجاء إستخدام `{prefix}announce cancel` أولاً."
 
-#: redbot/cogs/admin/admin.py:46
+#: Thinslaves/cogs/admin/admin.py:46
 #, docstring
 msgid "A collection of server administration utilities."
 msgstr "مجموعة من أدوات إدارة السيرفر."
 
-#: redbot/cogs/admin/admin.py:112
+#: Thinslaves/cogs/admin/admin.py:112
 msgid "I successfully added {role.name} to {member.display_name}"
 msgstr "لقد قمت بنجاح بإضافة {role.name} إلى {member.display_name}"
 
-#: redbot/cogs/admin/admin.py:127
+#: Thinslaves/cogs/admin/admin.py:127
 msgid "I successfully removed {role.name} from {member.display_name}"
 msgstr "لقد قمت بنجاح بإزالة {role.name} من {member.display_name}"
 
-#: redbot/cogs/admin/admin.py:138
+#: Thinslaves/cogs/admin/admin.py:138
 #, docstring
 msgid "Add a role to a user.\n\n"
 "        If user is left blank it defaults to the author of the command.\n"
@@ -53,7 +53,7 @@ msgid "Add a role to a user.\n\n"
 msgstr "         إذا تم ترك المستخدم فارغ, فسيكون إفتراضياً صاحب الأمر.\n"
 "        "
 
-#: redbot/cogs/admin/admin.py:156
+#: Thinslaves/cogs/admin/admin.py:156
 #, docstring
 msgid "Remove a role from a user.\n\n"
 "        If user is left blank it defaults to the author of the command.\n"
@@ -61,12 +61,12 @@ msgid "Remove a role from a user.\n\n"
 msgstr "         إذا تم ترك المستخدم فارغ, فسيكون إفتراضياً صاحب الأمر.\n"
 "        "
 
-#: redbot/cogs/admin/admin.py:172
+#: Thinslaves/cogs/admin/admin.py:172
 #, docstring
 msgid "Edit role settings."
 msgstr "تعديل إعدادات الرتبة."
 
-#: redbot/cogs/admin/admin.py:179
+#: Thinslaves/cogs/admin/admin.py:179
 #, docstring
 msgid "Edit a role's colour.\n\n"
 "        Use double quotes if the role contains spaces.\n"
@@ -84,11 +84,11 @@ msgstr "        استخدم علامة اقتباس مزدوجة إذا كان�
 "            `[p]editrole colour Test #ff9900`\n"
 "        "
 
-#: redbot/cogs/admin/admin.py:202 redbot/cogs/admin/admin.py:230
+#: Thinslaves/cogs/admin/admin.py:202 Thinslaves/cogs/admin/admin.py:230
 msgid "Done."
 msgstr "تم."
 
-#: redbot/cogs/admin/admin.py:207
+#: Thinslaves/cogs/admin/admin.py:207
 #, docstring
 msgid "Edit a role's name.\n\n"
 "        Use double quotes if the role or the name contain spaces.\n\n"
@@ -101,47 +101,47 @@ msgstr "تعديل إسم الرتبة.\n\n"
 "            `[p]editrole name \"The Transistor\" Test`\n"
 "        "
 
-#: redbot/cogs/admin/admin.py:235
+#: Thinslaves/cogs/admin/admin.py:235
 #, docstring
 msgid "Announce a message to all servers the bot is in."
 msgstr "الإعلان عن رسالة إلى جميع السيرفرات المتواجد بها البوت."
 
-#: redbot/cogs/admin/admin.py:242
+#: Thinslaves/cogs/admin/admin.py:242
 msgid "The announcement has begun."
 msgstr "تم البدء في الإعلان."
 
-#: redbot/cogs/admin/admin.py:250
+#: Thinslaves/cogs/admin/admin.py:250
 #, docstring
 msgid "Cancel a running announce."
 msgstr "إلغاء إعلان جارٍ."
 
-#: redbot/cogs/admin/admin.py:256
+#: Thinslaves/cogs/admin/admin.py:256
 msgid "The current announcement has been cancelled."
 msgstr "تم إلغاء الإعلان الحالي."
 
-#: redbot/cogs/admin/admin.py:262
+#: Thinslaves/cogs/admin/admin.py:262
 #, docstring
 msgid "Change the channel to which the bot makes announcements."
 msgstr "تعديل القناة التي يستخدمها البوت للإعلانات."
 
-#: redbot/cogs/admin/admin.py:268
+#: Thinslaves/cogs/admin/admin.py:268
 msgid "The announcement channel has been set to {channel.mention}"
 msgstr "تم تحديث قناة الإعلانات إلى {channel.mention}"
 
-#: redbot/cogs/admin/admin.py:275
+#: Thinslaves/cogs/admin/admin.py:275
 #, docstring
 msgid "Toggle announcements being enabled this server."
 msgstr "تم تمكين الإعلانات في السيرفر."
 
-#: redbot/cogs/admin/admin.py:281
+#: Thinslaves/cogs/admin/admin.py:281
 msgid "The server {guild.name} will receive announcements."
 msgstr "سيرفر {guild.name} سيتلقى إعلانات الآن."
 
-#: redbot/cogs/admin/admin.py:285
+#: Thinslaves/cogs/admin/admin.py:285
 msgid "The server {guild.name} will not receive announcements."
 msgstr "سيرفر {guild.name} لن يتلقى إعلانات."
 
-#: redbot/cogs/admin/admin.py:311
+#: Thinslaves/cogs/admin/admin.py:311
 #, docstring
 msgid "Add a role to yourself.\n\n"
 "        Server admins must have configured the role as user settable.\n\n"
@@ -152,7 +152,7 @@ msgstr "إضافة رتبة لنفسك.\n\n"
 "        ملاحظة: الرتبة حساسة لحالة الأحرف!\n"
 "        "
 
-#: redbot/cogs/admin/admin.py:322
+#: Thinslaves/cogs/admin/admin.py:322
 #, docstring
 msgid "Remove a selfrole from yourself.\n\n"
 "        NOTE: The role is case sensitive!\n"
@@ -161,7 +161,7 @@ msgstr "إزالة رتبة ذاتية من نفسك.\n\n"
 "        ملاحظة: الرتبة حساسة لحالة الأحرف!\n"
 "        "
 
-#: redbot/cogs/admin/admin.py:332
+#: Thinslaves/cogs/admin/admin.py:332
 #, docstring
 msgid "Add a role to the list of available selfroles.\n\n"
 "        NOTE: The role is case sensitive!\n"
@@ -170,11 +170,11 @@ msgstr "إضافة رتبة إلى قائمة الرتب الذاتية.\n\n"
 "        ملاحظة: الرتبة حساسة لحالة الأحرف!\n"
 "        "
 
-#: redbot/cogs/admin/admin.py:340 redbot/cogs/admin/admin.py:352
+#: Thinslaves/cogs/admin/admin.py:340 Thinslaves/cogs/admin/admin.py:352
 msgid "The selfroles list has been successfully modified."
 msgstr "تم تحديث/تعديل قائمة الرتب الذاتية بنجاح."
 
-#: redbot/cogs/admin/admin.py:345
+#: Thinslaves/cogs/admin/admin.py:345
 #, docstring
 msgid "Remove a role from the list of available selfroles.\n\n"
 "        NOTE: The role is case sensitive!\n"
@@ -183,7 +183,7 @@ msgstr "إزالة الرتبة من قائمة الرتب الذاتية.\n\n"
 "        ملاحظة: الرتبة حساسة لحالة الأحرف!\n"
 "        "
 
-#: redbot/cogs/admin/admin.py:356
+#: Thinslaves/cogs/admin/admin.py:356
 #, docstring
 msgid "\n"
 "        Lists all available selfroles.\n"
@@ -191,34 +191,34 @@ msgid "\n"
 msgstr "\n"
 "قائمة بجميع الرتب الذاتية.        "
 
-#: redbot/cogs/admin/admin.py:362
+#: Thinslaves/cogs/admin/admin.py:362
 msgid "Available Selfroles:\n"
 "{selfroles}"
 msgstr "الرتب الذاتية المتوفرة:\n"
 "{selfroles}"
 
-#: redbot/cogs/admin/admin.py:379
+#: Thinslaves/cogs/admin/admin.py:379
 #, docstring
 msgid "Lock a bot to its current servers only."
 msgstr "قفل البوت للسيرفر الحالي فقط."
 
-#: redbot/cogs/admin/admin.py:384
+#: Thinslaves/cogs/admin/admin.py:384
 msgid "The bot is no longer serverlocked."
 msgstr "لم يعد البوت مقفول للسيرفر الحالي فقط."
 
-#: redbot/cogs/admin/admin.py:386
+#: Thinslaves/cogs/admin/admin.py:386
 msgid "The bot is now serverlocked."
 msgstr "لقد تم قفل البوت للسيرفر الحالي فقط."
 
-#: redbot/cogs/admin/announcer.py:70
+#: Thinslaves/cogs/admin/announcer.py:70
 msgid "I could not announce to server: {server.id}"
 msgstr "لم أتمكن من الإعلان في السيرفر: {server.id}"
 
-#: redbot/cogs/admin/converters.py:25
+#: Thinslaves/cogs/admin/converters.py:25
 msgid "The Admin cog is not loaded."
 msgstr "لم يتم تحميل وحدة الأدمن cog."
 
-#: redbot/cogs/admin/converters.py:34
+#: Thinslaves/cogs/admin/converters.py:34
 msgid "The provided role is not a valid selfrole."
 msgstr "الرتبة المذكورة ليست على قائمة الرتب الذاتية."
 

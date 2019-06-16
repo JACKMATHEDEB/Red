@@ -7,11 +7,11 @@ from typing import Mapping, Tuple, Dict, Set
 
 import discord
 
-from redbot.core import Config, checks, commands
-from redbot.core.i18n import Translator, cog_i18n
-from redbot.core.utils import menus
-from redbot.core.utils.chat_formatting import box, pagify, escape
-from redbot.core.utils.predicates import MessagePredicate
+from Thinslaves.core import Config, checks, commands
+from Thinslaves.core.i18n import Translator, cog_i18n
+from Thinslaves.core.utils import menus
+from Thinslaves.core.utils.chat_formatting import box, pagify, escape
+from Thinslaves.core.utils.predicates import MessagePredicate
 
 _ = Translator("CustomCommands", __file__)
 

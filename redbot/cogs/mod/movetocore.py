@@ -3,8 +3,8 @@ import asyncio
 import contextlib
 
 import discord
-from redbot.core import commands, checks, i18n
-from redbot.core.utils.chat_formatting import box
+from Thinslaves.core import commands, checks, i18n
+from Thinslaves.core.utils.chat_formatting import box
 from .abc import MixinMeta
 
 log = logging.getLogger("red.mod")

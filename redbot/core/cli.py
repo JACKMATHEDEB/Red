@@ -46,13 +46,13 @@ def interactive_config(red, token_set, prefix_set):
 
 def parse_cli_flags(args):
     parser = argparse.ArgumentParser(
-        description="Red - Discord Bot", usage="redbot <instance_name> [arguments]"
+        description="Red - Discord Bot", usage="Thinslaves <instance_name> [arguments]"
     )
     parser.add_argument("--version", "-V", action="store_true", help="Show Red's current version")
     parser.add_argument(
         "--list-instances",
         action="store_true",
-        help="List all instance names setup with 'redbot-setup'",
+        help="List all instance names setup with 'Thinslaves-setup'",
     )
     parser.add_argument(
         "--owner",
@@ -128,7 +128,7 @@ def parse_cli_flags(args):
         ),
     )
     parser.add_argument(
-        "instance_name", nargs="?", help="Name of the bot instance created during `redbot-setup`."
+        "instance_name", nargs="?", help="Name of the bot instance created during `Thinslaves-setup`."
     )
 
     args = parser.parse_args(args)

@@ -16,17 +16,17 @@ msgstr ""
 "X-Crowdin-File: /cogs/filter/locales/messages.pot\n"
 "Language: ru_RU\n"
 
-#: redbot/cogs/filter/filter.py:14
+#: Thinslaves/cogs/filter/filter.py:14
 #, docstring
 msgid "Filter unwanted words and phrases from text channels."
 msgstr "Фильтровать нежелательные слова и фразы из текстовых каналов."
 
-#: redbot/cogs/filter/filter.py:50
+#: Thinslaves/cogs/filter/filter.py:50
 #, docstring
 msgid "Manage filter settings."
 msgstr "Управление настройками фильтра."
 
-#: redbot/cogs/filter/filter.py:55
+#: Thinslaves/cogs/filter/filter.py:55
 #, docstring
 msgid "Set the nickname for users with a filtered name.\n\n"
 "        Note that this has no effect if filtering names is disabled\n"
@@ -39,11 +39,11 @@ msgstr "Установить псевдоним для пользователе�
 "        Имя по умолчанию *John Doe*.\n"
 "        "
 
-#: redbot/cogs/filter/filter.py:64
+#: Thinslaves/cogs/filter/filter.py:64
 msgid "The name to use on filtered names has been set."
 msgstr "Имя для использования в отфильтрованных именах было установлено."
 
-#: redbot/cogs/filter/filter.py:68
+#: Thinslaves/cogs/filter/filter.py:68
 #, docstring
 msgid "Set the filter's autoban conditions.\n\n"
 "        Users will be banned if they send `<count>` filtered words in\n"
@@ -56,19 +56,19 @@ msgstr "Установите условия фильтра автобана.\n\n
 "       Установите оба в ноль, чтобы отключить автобан.\n"
 "        "
 
-#: redbot/cogs/filter/filter.py:77
+#: Thinslaves/cogs/filter/filter.py:77
 msgid "Count and timeframe either both need to be 0 or both need to be greater than 0!"
 msgstr "Количество или период должны быть равны 0, либо оба должна быть больше 0!"
 
-#: redbot/cogs/filter/filter.py:86
+#: Thinslaves/cogs/filter/filter.py:86
 msgid "Autoban disabled."
 msgstr "Автобан отключен."
 
-#: redbot/cogs/filter/filter.py:90
+#: Thinslaves/cogs/filter/filter.py:90
 msgid "Count and time have been set."
 msgstr "Количество и период были сохранены."
 
-#: redbot/cogs/filter/filter.py:96
+#: Thinslaves/cogs/filter/filter.py:96
 #, docstring
 msgid "Add or remove words from server filter.\n\n"
 "        Use double quotes to add or remove sentences.\n\n"
@@ -81,15 +81,15 @@ msgstr "Добавить или удалить слова из фильтра с
 "        список отфильтрованных слов сервера.\n"
 "        "
 
-#: redbot/cogs/filter/filter.py:109
+#: Thinslaves/cogs/filter/filter.py:109
 msgid "Filtered in this server:"
 msgstr "Filtered in this server:"
 
-#: redbot/cogs/filter/filter.py:114 redbot/cogs/filter/filter.py:136
+#: Thinslaves/cogs/filter/filter.py:114 Thinslaves/cogs/filter/filter.py:136
 msgid "I can't send direct messages to you."
 msgstr "Я не могу отправить вам личное сообщение."
 
-#: redbot/cogs/filter/filter.py:118
+#: Thinslaves/cogs/filter/filter.py:118
 #, docstring
 msgid "Add or remove words from channel filter.\n\n"
 "        Use double quotes to add or remove sentences.\n\n"
@@ -102,11 +102,11 @@ msgstr "Добавить или удалить слова из фильтра к
 "        отфильтрованных слов канала.\n"
 "        "
 
-#: redbot/cogs/filter/filter.py:131
+#: Thinslaves/cogs/filter/filter.py:131
 msgid "Filtered in this channel:"
 msgstr "Отфильтровано в этом канале:"
 
-#: redbot/cogs/filter/filter.py:140
+#: Thinslaves/cogs/filter/filter.py:140
 #, docstring
 msgid "Add words to the filter.\n\n"
 "        Use double quotes to add sentences.\n\n"
@@ -121,15 +121,15 @@ msgstr "Добавить слова в фильтр.\n\n"
 "        - `[p]filter channel add \"Это предложение\"`\n"
 "        "
 
-#: redbot/cogs/filter/filter.py:166
+#: Thinslaves/cogs/filter/filter.py:166
 msgid "Words added to filter."
 msgstr "Слова добавлены в фильтр."
 
-#: redbot/cogs/filter/filter.py:168
+#: Thinslaves/cogs/filter/filter.py:168
 msgid "Words already in the filter."
 msgstr "Слова уже в фильтре."
 
-#: redbot/cogs/filter/filter.py:172
+#: Thinslaves/cogs/filter/filter.py:172
 #, docstring
 msgid "Remove words from the filter.\n\n"
 "        Use double quotes to remove sentences.\n\n"
@@ -144,15 +144,15 @@ msgstr "Удалить слова из фильтра.\n\n"
 "        - `[p]filter channel remove \"Это предложение\"`\n"
 "        "
 
-#: redbot/cogs/filter/filter.py:198
+#: Thinslaves/cogs/filter/filter.py:198
 msgid "Words removed from filter."
 msgstr "Слова удалены из фильтра."
 
-#: redbot/cogs/filter/filter.py:200 redbot/cogs/filter/filter.py:264
+#: Thinslaves/cogs/filter/filter.py:200 Thinslaves/cogs/filter/filter.py:264
 msgid "Those words weren't in the filter."
 msgstr "Эти слова не были в фильтре."
 
-#: redbot/cogs/filter/filter.py:204
+#: Thinslaves/cogs/filter/filter.py:204
 #, docstring
 msgid "Add words to the filter.\n\n"
 "        Use double quotes to add sentences.\n\n"
@@ -167,15 +167,15 @@ msgstr "Добавить слова в фильтр.\n\n"
 "        - `[p]filter add \"Это предложение\"`\n"
 "        "
 
-#: redbot/cogs/filter/filter.py:230
+#: Thinslaves/cogs/filter/filter.py:230
 msgid "Words successfully added to filter."
 msgstr "Слова успешно добавлены в фильтр."
 
-#: redbot/cogs/filter/filter.py:232
+#: Thinslaves/cogs/filter/filter.py:232
 msgid "Those words were already in the filter."
 msgstr "Эти слова уже были в фильтре."
 
-#: redbot/cogs/filter/filter.py:236
+#: Thinslaves/cogs/filter/filter.py:236
 #, docstring
 msgid "Remove words from the filter.\n\n"
 "        Use double quotes to remove sentences.\n\n"
@@ -190,11 +190,11 @@ msgstr "Удалить слова из фильтра.\n\n"
 "        - `[p]filter remove \"Это предложение\"`\n"
 "        "
 
-#: redbot/cogs/filter/filter.py:262
+#: Thinslaves/cogs/filter/filter.py:262
 msgid "Words successfully removed from filter."
 msgstr "Слова успешно удалены из фильтра."
 
-#: redbot/cogs/filter/filter.py:268
+#: Thinslaves/cogs/filter/filter.py:268
 #, docstring
 msgid "Toggle name and nickname filtering.\n\n"
 "        This is disabled by default.\n"
@@ -203,23 +203,23 @@ msgstr "Переключение фильтрации имен и никнейм
 "        Отключено по умолчанию.\n"
 "        "
 
-#: redbot/cogs/filter/filter.py:276
+#: Thinslaves/cogs/filter/filter.py:276
 msgid "Names and nicknames will no longer be filtered."
 msgstr "Имена и никнеймы больше не будут фильтроваться."
 
-#: redbot/cogs/filter/filter.py:278
+#: Thinslaves/cogs/filter/filter.py:278
 msgid "Names and nicknames will now be filtered."
 msgstr "Имена и никнеймы теперь будут отфильтрованы."
 
-#: redbot/cogs/filter/filter.py:354
+#: Thinslaves/cogs/filter/filter.py:354
 msgid "Autoban (too many filtered messages.)"
 msgstr "Автобан (слишком много отфильтрованных сообщений.)"
 
-#: redbot/cogs/filter/filter.py:409
+#: Thinslaves/cogs/filter/filter.py:409
 msgid "Filtered nickname"
 msgstr "Отфильтрованный никнейм"
 
-#: redbot/cogs/filter/filter.py:409
+#: Thinslaves/cogs/filter/filter.py:409
 msgid "Filtered name"
 msgstr "Отфильтрованное имя"
 

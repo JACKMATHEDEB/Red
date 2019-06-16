@@ -1,7 +1,7 @@
 from collections import defaultdict, deque
 
-from redbot.core import commands, i18n, checks
-from redbot.core.utils.chat_formatting import box
+from Thinslaves.core import commands, i18n, checks
+from Thinslaves.core.utils.chat_formatting import box
 
 from .abc import MixinMeta
 

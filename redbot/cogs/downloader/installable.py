@@ -8,7 +8,7 @@ from typing import MutableMapping, Any, TYPE_CHECKING
 from .log import log
 from .json_mixins import RepoJSONMixin
 
-from redbot.core import __version__, version_info as red_version_info, VersionInfo
+from Thinslaves.core import __version__, version_info as red_version_info, VersionInfo
 
 if TYPE_CHECKING:
     from .repo_manager import RepoManager

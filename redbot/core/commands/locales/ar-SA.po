@@ -16,11 +16,11 @@ msgstr ""
 "X-Crowdin-File: /core/commands/locales/messages.pot\n"
 "Language: ar_SA\n"
 
-#: redbot/core/commands/commands.py:293
+#: Thinslaves/core/commands/commands.py:293
 msgid "\"{argument}\" is not a number."
 msgstr ""
 
-#: redbot/core/commands/converter.py:39
+#: Thinslaves/core/commands/converter.py:39
 msgid "Server \"{name}\" not found."
 msgstr ""
 

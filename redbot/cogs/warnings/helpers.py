@@ -3,9 +3,9 @@ import asyncio
 import inspect
 import discord
 
-from redbot.core import Config, checks, commands
-from redbot.core.i18n import Translator
-from redbot.core.utils.predicates import MessagePredicate
+from Thinslaves.core import Config, checks, commands
+from Thinslaves.core.i18n import Translator
+from Thinslaves.core.utils.predicates import MessagePredicate
 
 _ = Translator("Warnings", __file__)
 

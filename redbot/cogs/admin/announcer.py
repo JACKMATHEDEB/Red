@@ -1,8 +1,8 @@
 import asyncio
 
 import discord
-from redbot.core import commands
-from redbot.core.i18n import Translator
+from Thinslaves.core import commands
+from Thinslaves.core.i18n import Translator
 
 _ = Translator("Announcer", __file__)
 

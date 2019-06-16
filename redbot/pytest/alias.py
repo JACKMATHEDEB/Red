@@ -1,7 +1,7 @@
 import pytest
 
-from redbot.cogs.alias import Alias
-from redbot.core import Config
+from Thinslaves.cogs.alias import Alias
+from Thinslaves.core import Config
 
 __all__ = ["alias"]
 

@@ -4,12 +4,12 @@ from collections import Counter
 from typing import List
 import yaml
 import discord
-from redbot.core import commands
-from redbot.core import Config, checks
-from redbot.core.data_manager import cog_data_path
-from redbot.core.i18n import Translator, cog_i18n
-from redbot.core.utils.chat_formatting import box, pagify, bold
-from redbot.cogs.bank import check_global_setting_admin
+from Thinslaves.core import commands
+from Thinslaves.core import Config, checks
+from Thinslaves.core.data_manager import cog_data_path
+from Thinslaves.core.i18n import Translator, cog_i18n
+from Thinslaves.core.utils.chat_formatting import box, pagify, bold
+from Thinslaves.cogs.bank import check_global_setting_admin
 from .log import LOG
 from .session import TriviaSession
 

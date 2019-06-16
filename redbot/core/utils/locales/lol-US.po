@@ -16,7 +16,7 @@ msgstr ""
 "X-Crowdin-File: /core/utils/locales/messages.pot\n"
 "Language: lol_US\n"
 
-#: redbot/core/utils/chat_formatting.py:362
+#: Thinslaves/core/utils/chat_formatting.py:362
 msgid ", and "
 msgstr ", and "
 

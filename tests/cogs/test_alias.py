@@ -1,5 +1,5 @@
 import pytest
-from redbot.pytest.alias import *
+from Thinslaves.pytest.alias import *
 
 
 def test_is_valid_alias_name(alias):

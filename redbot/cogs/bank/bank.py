@@ -1,10 +1,10 @@
 import discord
-from redbot.core.utils.chat_formatting import box
+from Thinslaves.core.utils.chat_formatting import box
 
-from redbot.core import checks, bank, commands
-from redbot.core.i18n import Translator, cog_i18n
+from Thinslaves.core import checks, bank, commands
+from Thinslaves.core.i18n import Translator, cog_i18n
 
-from redbot.core.bot import Red  # Only used for type hints
+from Thinslaves.core.bot import Red  # Only used for type hints
 
 _ = Translator("Bank", __file__)
 

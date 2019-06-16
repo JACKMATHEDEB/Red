@@ -17,7 +17,7 @@ Basic Usage
 
 .. code-block:: python
 
-    from redbot.core import Config
+    from Thinslaves.core import Config
 
     class MyCog:
         def __init__(self):
@@ -35,7 +35,7 @@ Basic Usage
 Tutorial
 ********
 
-.. py:currentmodule:: redbot.core.config
+.. py:currentmodule:: Thinslaves.core.config
 
 This tutorial will walk you through how to use Config.
 
@@ -43,7 +43,7 @@ First, you need to import Config:
 
 .. code-block:: python
 
-    from redbot.core import Config
+    from Thinslaves.core import Config
 
 Then, in the class's :code:`__init__` function, you need to get a config instance:
 
@@ -192,8 +192,8 @@ This usage guide will cover the following features:
 For this example let's suppose that we're creating a cog that allows users to buy and own multiple pets using
 the built-in Economy credits::
 
-    from redbot.core import bank
-    from redbot.core import Config
+    from Thinslaves.core import bank
+    from Thinslaves.core import Config
     from discord.ext import commands
 
 
@@ -343,7 +343,7 @@ much the same way they would in V2. The following examples will demonstrate how 
 
 .. code-block:: python
 
-    from redbot.core import Config
+    from Thinslaves.core import Config
 
 
     class ExampleCog:
@@ -389,7 +389,7 @@ API Reference
         >>> await conf.foo()
         {'123': True, '456': {'789': False}}
 
-.. automodule:: redbot.core.config
+.. automodule:: Thinslaves.core.config
 
 Config
 ^^^^^^
@@ -416,20 +416,20 @@ Value
 Driver Reference
 ****************
 
-.. automodule:: redbot.core.drivers
+.. automodule:: Thinslaves.core.drivers
     :members:
 
 Base Driver
 ^^^^^^^^^^^
-.. autoclass:: redbot.core.drivers.red_base.BaseDriver
+.. autoclass:: Thinslaves.core.drivers.red_base.BaseDriver
     :members:
 
 JSON Driver
 ^^^^^^^^^^^
-.. autoclass:: redbot.core.drivers.red_json.JSON
+.. autoclass:: Thinslaves.core.drivers.red_json.JSON
     :members:
 
 Mongo Driver
 ^^^^^^^^^^^^
-.. autoclass:: redbot.core.drivers.red_mongo.Mongo
+.. autoclass:: Thinslaves.core.drivers.red_mongo.Mongo
     :members:

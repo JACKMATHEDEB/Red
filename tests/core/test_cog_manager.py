@@ -2,14 +2,14 @@ from pathlib import Path
 
 import pytest
 
-from redbot.pytest.cog_manager import *
-from redbot.core import cog_manager
+from Thinslaves.pytest.cog_manager import *
+from Thinslaves.core import cog_manager
 
 
 @pytest.mark.skip
 @pytest.mark.asyncio
 async def test_ensure_cogs_in_paths(cog_mgr, default_dir):
-    cogs_dir = default_dir / "redbot" / "cogs"
+    cogs_dir = default_dir / "Thinslaves" / "cogs"
     assert cogs_dir in await cog_mgr.paths()
 
 

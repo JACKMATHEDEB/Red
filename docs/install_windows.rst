@@ -91,7 +91,7 @@ After installation, set up your instance with the following command:
 
 .. code-block:: none
 
-    redbot-setup
+    Thinslaves-setup
 
 This will set the location where data will be stored, as well as your
 storage backend and the name of the instance (which will be used for
@@ -101,7 +101,7 @@ Once done setting up the instance, run the following command to run Red:
 
 .. code-block:: none
 
-    redbot <your instance name>
+    Thinslaves <your instance name>
 
 It will walk through the initial setup, asking for your token and a prefix.
 You can find out how to obtain a token with
@@ -114,4 +114,4 @@ launcher menu. Use the following command to run the launcher:
 
 .. code-block:: none
 
-    redbot-launcher
+    Thinslaves-launcher

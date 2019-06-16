@@ -5,10 +5,10 @@ from pathlib import Path
 import pytest
 from unittest.mock import MagicMock
 
-from redbot.pytest.downloader import *
+from Thinslaves.pytest.downloader import *
 
-from redbot.cogs.downloader.repo_manager import RepoManager, Repo
-from redbot.cogs.downloader.errors import ExistingGitRepo
+from Thinslaves.cogs.downloader.repo_manager import RepoManager, Repo
+from Thinslaves.cogs.downloader.errors import ExistingGitRepo
 
 
 def test_existing_git_repo(tmpdir):
@@ -29,7 +29,7 @@ def test_existing_git_repo(tmpdir):
 
 @pytest.mark.asyncio
 async def test_add_repo(monkeypatch, repo_manager):
-    monkeypatch.setattr("redbot.cogs.downloader.repo_manager.Repo._run", fake_run_noprint)
+    monkeypatch.setattr("Thinslaves.cogs.downloader.repo_manager.Repo._run", fake_run_noprint)
 
     squid = await repo_manager.add_repo(
         url="https://github.com/tekulvw/Squid-Plugins", name="squid", branch="rewrite_cogs"
@@ -40,9 +40,9 @@ async def test_add_repo(monkeypatch, repo_manager):
 
 @pytest.mark.asyncio
 async def test_lib_install_requirements(monkeypatch, library_installable, repo, tmpdir):
-    monkeypatch.setattr("redbot.cogs.downloader.repo_manager.Repo._run", fake_run_noprint)
+    monkeypatch.setattr("Thinslaves.cogs.downloader.repo_manager.Repo._run", fake_run_noprint)
     monkeypatch.setattr(
-        "redbot.cogs.downloader.repo_manager.Repo.available_libraries", (library_installable,)
+        "Thinslaves.cogs.downloader.repo_manager.Repo.available_libraries", (library_installable,)
     )
 
     lib_path = Path(str(tmpdir)) / "cog_data_path" / "lib"
@@ -56,7 +56,7 @@ async def test_lib_install_requirements(monkeypatch, library_installable, repo, 
 
 @pytest.mark.asyncio
 async def test_remove_repo(monkeypatch, repo_manager):
-    monkeypatch.setattr("redbot.cogs.downloader.repo_manager.Repo._run", fake_run_noprint)
+    monkeypatch.setattr("Thinslaves.cogs.downloader.repo_manager.Repo._run", fake_run_noprint)
 
     await repo_manager.add_repo(
         url="https://github.com/tekulvw/Squid-Plugins", name="squid", branch="rewrite_cogs"

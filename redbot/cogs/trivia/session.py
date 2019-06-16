@@ -4,10 +4,10 @@ import time
 import random
 from collections import Counter
 import discord
-from redbot.core import bank
-from redbot.core.i18n import Translator
-from redbot.core.utils.chat_formatting import box, bold, humanize_list
-from redbot.core.utils.common_filters import normalize_smartquotes
+from Thinslaves.core import bank
+from Thinslaves.core.i18n import Translator
+from Thinslaves.core.utils.chat_formatting import box, bold, humanize_list
+from Thinslaves.core.utils.common_filters import normalize_smartquotes
 from .log import LOG
 
 __all__ = ["TriviaSession"]

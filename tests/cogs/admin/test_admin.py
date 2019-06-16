@@ -2,7 +2,7 @@ from unittest.mock import MagicMock
 
 import pytest
 
-from redbot.pytest.admin import *
+from Thinslaves.pytest.admin import *
 
 
 @pytest.mark.asyncio

@@ -12,9 +12,9 @@ import logging
 import appdirs
 import click
 
-import redbot.logging
-from redbot.core.cli import confirm
-from redbot.core.data_manager import (
+import Thinslaves.logging
+from Thinslaves.core.cli import confirm
+from Thinslaves.core.data_manager import (
     basic_config_default,
     load_basic_configuration,
     instance_name,
@@ -23,11 +23,11 @@ from redbot.core.data_manager import (
     core_data_path,
     storage_details,
 )
-from redbot.core.json_io import JsonIO
-from redbot.core.utils import safe_delete
-from redbot.core import Config
-from redbot.core.drivers import BackendType, IdentifierData
-from redbot.core.drivers.red_json import JSON
+from Thinslaves.core.json_io import JsonIO
+from Thinslaves.core.utils import safe_delete
+from Thinslaves.core import Config
+from Thinslaves.core.drivers import BackendType, IdentifierData
+from Thinslaves.core.drivers.red_json import JSON
 
 conversion_log = logging.getLogger("red.converter")
 
@@ -166,7 +166,7 @@ def basic_setup():
     default_dirs["STORAGE_TYPE"] = storage_type.value
 
     if storage_type == BackendType.MONGO:
-        from redbot.core.drivers.red_mongo import get_config_details
+        from Thinslaves.core.drivers.red_mongo import get_config_details
 
         default_dirs["STORAGE_DETAILS"] = get_config_details()
     else:
@@ -177,7 +177,7 @@ def basic_setup():
 
     print()
     print(
-        "Your basic configuration has been saved. Please run `redbot <name>` to"
+        "Your basic configuration has been saved. Please run `Thinslaves <name>` to"
         " continue your setup process and to run the bot."
     )
 
@@ -199,7 +199,7 @@ async def json_to_mongov2(instance):
 
     load_basic_configuration(instance)
 
-    from redbot.core.drivers import red_mongo
+    from Thinslaves.core.drivers import red_mongo
 
     storage_details = red_mongo.get_config_details()
 
@@ -247,7 +247,7 @@ async def mongov2_to_json(instance):
 
     core_path = core_data_path()
 
-    from redbot.core.drivers import red_json
+    from Thinslaves.core.drivers import red_json
 
     core_conf = Config.get_core_conf()
     new_driver = red_json.JSON(cog_name="Core", identifier="0", data_path_override=core_path)
@@ -301,7 +301,7 @@ async def mongov2_to_json(instance):
 async def mongo_to_json(instance):
     load_basic_configuration(instance)
 
-    from redbot.core.drivers.red_mongo import Mongo
+    from Thinslaves.core.drivers.red_mongo import Mongo
 
     m = Mongo("Core", "0", **storage_details())
     db = m.db
@@ -404,7 +404,7 @@ async def create_backup(instance):
                 os.path.join("CogManager", "cogs"),
                 os.path.join("RepoManager", "repos"),
             ]
-            from redbot.cogs.downloader.repo_manager import RepoManager
+            from Thinslaves.cogs.downloader.repo_manager import RepoManager
 
             repo_mgr = RepoManager()
             repo_output = []
@@ -431,7 +431,7 @@ async def remove_instance(instance):
 
     instance_vals = instance_data[instance]
     if instance_vals["STORAGE_TYPE"] == "MongoDB":
-        from redbot.core.drivers.red_mongo import Mongo
+        from Thinslaves.core.drivers.red_mongo import Mongo
 
         m = Mongo("Core", **instance_vals["STORAGE_DETAILS"])
         db = m.db
@@ -473,7 +473,7 @@ async def remove_instance_interaction():
 @click.pass_context
 def cli(ctx, debug):
     level = logging.DEBUG if debug else logging.INFO
-    redbot.logging.init_logging(level=level, location=Path.cwd() / "red_setup_logs")
+    Thinslaves.logging.init_logging(level=level, location=Path.cwd() / "red_setup_logs")
     if ctx.invoked_subcommand is None:
         basic_setup()
 

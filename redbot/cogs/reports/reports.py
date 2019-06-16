@@ -6,13 +6,13 @@ from copy import copy
 import contextlib
 import discord
 
-from redbot.core import Config, checks, commands
-from redbot.core.utils.chat_formatting import pagify, box
-from redbot.core.utils.antispam import AntiSpam
-from redbot.core.bot import Red
-from redbot.core.i18n import Translator, cog_i18n
-from redbot.core.utils.predicates import MessagePredicate
-from redbot.core.utils.tunnel import Tunnel
+from Thinslaves.core import Config, checks, commands
+from Thinslaves.core.utils.chat_formatting import pagify, box
+from Thinslaves.core.utils.antispam import AntiSpam
+from Thinslaves.core.bot import Red
+from Thinslaves.core.i18n import Translator, cog_i18n
+from Thinslaves.core.utils.predicates import MessagePredicate
+from Thinslaves.core.utils.tunnel import Tunnel
 
 
 _ = Translator("Reports", __file__)
@@ -31,7 +31,7 @@ class Reports(commands.Cog):
     # becomes an issue.
     # Intervals should be a list of tuples in the form
     # (period: timedelta, max_frequency: int)
-    # see redbot/core/utils/antispam.py for more details
+    # see Thinslaves/core/utils/antispam.py for more details
 
     intervals = [
         (timedelta(seconds=5), 1),

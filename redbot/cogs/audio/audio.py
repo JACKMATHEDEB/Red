@@ -15,12 +15,12 @@ import random
 import re
 import time
 from typing import Optional
-import redbot.core
-from redbot.core import Config, commands, checks, bank
-from redbot.core.data_manager import cog_data_path
-from redbot.core.i18n import Translator, cog_i18n
-from redbot.core.utils.chat_formatting import bold, box, pagify
-from redbot.core.utils.menus import (
+import Thinslaves.core
+from Thinslaves.core import Config, commands, checks, bank
+from Thinslaves.core.data_manager import cog_data_path
+from Thinslaves.core.i18n import Translator, cog_i18n
+from Thinslaves.core.utils.chat_formatting import bold, box, pagify
+from Thinslaves.core.utils.menus import (
     menu,
     DEFAULT_CONTROLS,
     prev_page,
@@ -28,7 +28,7 @@ from redbot.core.utils.menus import (
     close_menu,
     start_adding_reactions,
 )
-from redbot.core.utils.predicates import MessagePredicate, ReactionPredicate
+from Thinslaves.core.utils.predicates import MessagePredicate, ReactionPredicate
 from urllib.parse import urlparse
 from .manager import ServerManager
 
@@ -60,7 +60,7 @@ class Audio(commands.Cog):
             status=False,
             use_external_lavalink=False,
             restrict=True,
-            current_version=redbot.core.VersionInfo.from_str("3.0.0a0").to_json(),
+            current_version=Thinslaves.core.VersionInfo.from_str("3.0.0a0").to_json(),
             localpath=str(cog_data_path(raw_name="Audio")),
             **self._default_lavalink_settings,
         )
@@ -544,7 +544,7 @@ class Audio(commands.Cog):
         jukebox_price = data["jukebox_price"]
         thumbnail = data["thumbnail"]
         dc = data["disconnect"]
-        jarbuild = redbot.core.__version__
+        jarbuild = Thinslaves.core.__version__
         maxlength = data["maxlength"]
         vote_percent = data["vote_percent"]
         msg = "----" + _("Server Settings") + "----        \n"

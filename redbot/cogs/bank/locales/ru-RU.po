@@ -16,17 +16,17 @@ msgstr ""
 "X-Crowdin-File: /cogs/bank/locales/messages.pot\n"
 "Language: ru_RU\n"
 
-#: redbot/cogs/bank/bank.py:58
+#: Thinslaves/cogs/bank/bank.py:58
 #, docstring
 msgid "Bank"
 msgstr "Банк"
 
-#: redbot/cogs/bank/bank.py:70
+#: Thinslaves/cogs/bank/bank.py:70
 #, docstring
 msgid "Base command for bank settings."
 msgstr "Базовая команда для настройки банка."
 
-#: redbot/cogs/bank/bank.py:83
+#: Thinslaves/cogs/bank/bank.py:83
 msgid "Bank settings:\n\n"
 "Bank name: {bank_name}\n"
 "Currency: {currency_name}\n"
@@ -36,7 +36,7 @@ msgstr "Настройки банка:\n\n"
 "Валюта: {currency_name}\n"
 "Баланс по умолчанию: {default_balance}"
 
-#: redbot/cogs/bank/bank.py:94
+#: Thinslaves/cogs/bank/bank.py:94
 #, docstring
 msgid "Toggle whether the bank is global or not.\n\n"
 "        If the bank is global, it will become per-server.\n"
@@ -47,37 +47,37 @@ msgstr "Переключить, является ли банк глобальн�
 "        Если банк является серверным, он станет глобальным.\n"
 "        "
 
-#: redbot/cogs/bank/bank.py:101
+#: Thinslaves/cogs/bank/bank.py:101
 msgid "per-server"
 msgstr "каждый-сервер"
 
-#: redbot/cogs/bank/bank.py:101
+#: Thinslaves/cogs/bank/bank.py:101
 msgid "global"
 msgstr "глобально"
 
-#: redbot/cogs/bank/bank.py:104
+#: Thinslaves/cogs/bank/bank.py:104
 msgid "This will toggle the bank to be {banktype}, deleting all accounts in the process! If you're sure, type `{command}`"
 msgstr "Это переключит банк на {banktype}, удалив все учетные записи в процессе! Если вы уверены, введите `{command}`"
 
-#: redbot/cogs/bank/bank.py:111
+#: Thinslaves/cogs/bank/bank.py:111
 msgid "The bank is now {banktype}."
 msgstr "Банк теперь {banktype}."
 
-#: redbot/cogs/bank/bank.py:116
+#: Thinslaves/cogs/bank/bank.py:116
 #, docstring
 msgid "Set the bank's name."
 msgstr "Установите имя банка."
 
-#: redbot/cogs/bank/bank.py:118
+#: Thinslaves/cogs/bank/bank.py:118
 msgid "Bank name has been set to: {name}"
 msgstr "Название банка было установлено на: {name}"
 
-#: redbot/cogs/bank/bank.py:123
+#: Thinslaves/cogs/bank/bank.py:123
 #, docstring
 msgid "Set the name for the bank's currency."
 msgstr "Установите название для валюты банка."
 
-#: redbot/cogs/bank/bank.py:125
+#: Thinslaves/cogs/bank/bank.py:125
 msgid "Currency name has been set to: {name}"
 msgstr "Название валюты было установлено на: {name}"
 

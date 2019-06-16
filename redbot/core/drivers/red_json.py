@@ -15,7 +15,7 @@ _shared_datastore = {}
 _driver_counts = {}
 _finalizers = []
 
-log = logging.getLogger("redbot.json_driver")
+log = logging.getLogger("Thinslaves.json_driver")
 
 
 def finalize_driver(cog_name):

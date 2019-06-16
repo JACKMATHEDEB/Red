@@ -107,7 +107,7 @@ async def is_mod_or_superior(
 
     Parameters
     ----------
-    bot : redbot.core.bot.Red
+    bot : Thinslaves.core.bot.Red
         The bot object.
     obj : `discord.Message` or `discord.Member` or `discord.Role`
         The object to check permissions for.
@@ -192,7 +192,7 @@ async def is_admin_or_superior(
 
     Parameters
     ----------
-    bot : redbot.core.bot.Red
+    bot : Thinslaves.core.bot.Red
         The bot object.
     obj : `discord.Message` or `discord.Member` or `discord.Role`
         The object to check permissions for.

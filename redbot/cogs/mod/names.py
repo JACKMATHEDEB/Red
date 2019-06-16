@@ -2,13 +2,13 @@ from datetime import datetime
 from typing import cast
 
 import discord
-from redbot.core import commands, i18n, checks
-from redbot.core.utils.common_filters import (
+from Thinslaves.core import commands, i18n, checks
+from Thinslaves.core.utils.common_filters import (
     filter_invites,
     filter_various_mentions,
     escape_spoilers_and_mass_mentions,
 )
-from redbot.core.utils.mod import get_audit_reason
+from Thinslaves.core.utils.mod import get_audit_reason
 from .abc import MixinMeta
 
 _ = i18n.Translator("Mod", __file__)

@@ -4,10 +4,10 @@ from enum import Enum
 from random import randint, choice
 import aiohttp
 import discord
-from redbot.core import commands
-from redbot.core.i18n import Translator, cog_i18n
-from redbot.core.utils.menus import menu, DEFAULT_CONTROLS
-from redbot.core.utils.chat_formatting import escape, italics
+from Thinslaves.core import commands
+from Thinslaves.core.i18n import Translator, cog_i18n
+from Thinslaves.core.utils.menus import menu, DEFAULT_CONTROLS
+from Thinslaves.core.utils.chat_formatting import escape, italics
 
 _ = T_ = Translator("General", __file__)
 

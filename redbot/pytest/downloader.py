@@ -4,8 +4,8 @@ import json
 
 import pytest
 
-from redbot.cogs.downloader.repo_manager import RepoManager, Repo
-from redbot.cogs.downloader.installable import Installable
+from Thinslaves.cogs.downloader.repo_manager import RepoManager, Repo
+from Thinslaves.cogs.downloader.installable import Installable
 
 __all__ = [
     "patch_relative_to",

@@ -5,8 +5,8 @@ from importlib.machinery import ModuleSpec
 from pathlib import Path
 from typing import Union, List, Optional
 
-import redbot.cogs
-from redbot.core.utils import deduplicate_iterables
+import Thinslaves.cogs
+from Thinslaves.core.utils import deduplicate_iterables
 import discord
 
 from . import checks, commands
@@ -35,7 +35,7 @@ class CogManager:
     bot directory.
     """
 
-    CORE_PATH = Path(redbot.cogs.__path__[0])
+    CORE_PATH = Path(Thinslaves.cogs.__path__[0])
 
     def __init__(self):
         self.conf = Config.get_conf(self, 2938473984732, True)
@@ -248,7 +248,7 @@ class CogManager:
             When no matching spec can be found.
         """
         real_name = ".{}".format(name)
-        package = "redbot.cogs"
+        package = "Thinslaves.cogs"
 
         try:
             mod = import_module(real_name, package=package)

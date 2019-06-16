@@ -16,7 +16,7 @@ Basic Usage
 
 .. code-block:: python
 
-    from redbot.core import modlog
+    from Thinslaves.core import modlog
     import discord
 
     class MyCog:
@@ -39,7 +39,7 @@ To register a single case type:
 
 .. code-block:: python
 
-    from redbot.core import modlog
+    from Thinslaves.core import modlog
     import discord
 
     class MyCog:
@@ -57,7 +57,7 @@ To register multiple case types:
 
 .. code-block:: python
 
-    from redbot.core import modlog
+    from Thinslaves.core import modlog
     import discord
 
     class MyCog:
@@ -91,5 +91,5 @@ API Reference
 Mod log
 =======
 
-.. automodule:: redbot.core.modlog
+.. automodule:: Thinslaves.core.modlog
     :members:

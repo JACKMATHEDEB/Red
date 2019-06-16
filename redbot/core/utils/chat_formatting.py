@@ -4,7 +4,7 @@ from typing import Sequence, Iterator, List, Optional
 
 import discord
 
-from redbot.core.i18n import Translator
+from Thinslaves.core.i18n import Translator
 
 _ = Translator("UtilsChatFormatting", __file__)
 
@@ -353,7 +353,7 @@ def humanize_list(items: Sequence[str]) -> str:
     --------
     .. testsetup::
 
-        from redbot.core.utils.chat_formatting import humanize_list
+        from Thinslaves.core.utils.chat_formatting import humanize_list
 
     .. doctest::
 

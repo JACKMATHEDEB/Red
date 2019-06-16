@@ -1,7 +1,7 @@
 from typing import Tuple
 
 import discord
-from redbot.core import commands
+from Thinslaves.core import commands
 
 
 class AliasEntry:

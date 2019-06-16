@@ -5,11 +5,11 @@ import weakref
 
 import pytest
 from _pytest.monkeypatch import MonkeyPatch
-from redbot.core import Config
-from redbot.core.bot import Red
-from redbot.core import config as config_module
+from Thinslaves.core import Config
+from Thinslaves.core.bot import Red
+from Thinslaves.core import config as config_module
 
-from redbot.core.drivers import red_json
+from Thinslaves.core.drivers import red_json
 
 __all__ = [
     "monkeysession",
@@ -41,7 +41,7 @@ def monkeysession(request):
 
 @pytest.fixture(autouse=True)
 def override_data_path(tmpdir):
-    from redbot.core import data_manager
+    from Thinslaves.core import data_manager
 
     data_manager.basic_config = data_manager.basic_config_default
     data_manager.basic_config["DATA_PATH"] = str(tmpdir)
@@ -168,7 +168,7 @@ def ctx(empty_member, empty_channel, red):
 # region Red Mock
 @pytest.fixture()
 def red(config_fr):
-    from redbot.core.cli import parse_cli_flags
+    from Thinslaves.core.cli import parse_cli_flags
 
     cli_flags = parse_cli_flags(["ignore_me"])
 

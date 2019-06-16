@@ -23,7 +23,7 @@ from typing import (
 
 import discord
 from fuzzywuzzy import fuzz, process
-from redbot.core import commands
+from Thinslaves.core import commands
 
 from .chat_formatting import box
 
@@ -193,7 +193,7 @@ async def fuzzy_command_search(
 
     Parameters
     ----------
-    ctx : `commands.Context <redbot.core.commands.Context>`
+    ctx : `commands.Context <Thinslaves.core.commands.Context>`
         The command invocation context.
     term : Optional[str]
         The name of the invoked command. If ``None``, `Context.invoked_with`
@@ -203,7 +203,7 @@ async def fuzzy_command_search(
 
     Returns
     -------
-    Optional[List[`commands.Command <redbot.core.commands.Command>`]]
+    Optional[List[`commands.Command <Thinslaves.core.commands.Command>`]]
         A list of commands which were fuzzily matched with the invoked
         command.
 
@@ -266,9 +266,9 @@ async def format_fuzzy_results(
 
     Parameters
     ----------
-    ctx : `commands.Context <redbot.core.commands.Context>`
+    ctx : `commands.Context <Thinslaves.core.commands.Context>`
         The context in which this result is being displayed.
-    matched_commands : List[`commands.Command <redbot.core.commands.Command>`]
+    matched_commands : List[`commands.Command <Thinslaves.core.commands.Command>`]
         A list of commands which have been matched by the fuzzy search, sorted
         in order of decreasing similarity.
     embed : bool

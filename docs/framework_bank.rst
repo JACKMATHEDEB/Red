@@ -16,7 +16,7 @@ Basic Usage
 
 .. code-block:: python
 
-    from redbot.core import bank
+    from Thinslaves.core import bank
 
     class MyCog:
         @commands.command()
@@ -38,5 +38,5 @@ API Reference
 Bank
 ======
 
-.. automodule:: redbot.core.bank
+.. automodule:: Thinslaves.core.bank
     :members:

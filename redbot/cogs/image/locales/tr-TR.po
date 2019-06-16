@@ -16,12 +16,12 @@ msgstr ""
 "X-Crowdin-File: /cogs/image/locales/messages.pot\n"
 "Language: tr_TR\n"
 
-#: redbot/cogs/image/image.py:15
+#: Thinslaves/cogs/image/image.py:15
 #, docstring
 msgid "Image related commands."
 msgstr "Görüntü ile ilgili komutları."
 
-#: redbot/cogs/image/image.py:32
+#: Thinslaves/cogs/image/image.py:32
 #, docstring
 msgid "Retrieve pictures from Imgur.\n\n"
 "        Make sure to set the Client ID using `[p]imgurcreds`.\n"
@@ -30,7 +30,7 @@ msgstr "Resimler Imgur almak.\n\n"
 "        <div class=\"notranslate\"> '1</div> imgurcreds' kullanarak istemci kimliğini ayarlamak emin olun.\n"
 "        "
 
-#: redbot/cogs/image/image.py:40
+#: Thinslaves/cogs/image/image.py:40
 #, docstring
 msgid "Search Imgur for the specified term.\n\n"
 "        Returns up to 3 results.\n"
@@ -38,23 +38,23 @@ msgid "Search Imgur for the specified term.\n\n"
 msgstr "Belirtilen terim için Imgur'u ara.\n\n"
 "        En fazla 3 sonuç döndürür.        "
 
-#: redbot/cogs/image/image.py:49 redbot/cogs/image/image.py:102
+#: Thinslaves/cogs/image/image.py:49 Thinslaves/cogs/image/image.py:102
 msgid "A Client ID has not been set! Please set one with `{prefix}imgurcreds`."
 msgstr "Bir Müşteri Kimliği ayarlanmamış! Lütfen bir tane` {prefix} imgurcreds` ile ayarlayın."
 
-#: redbot/cogs/image/image.py:61
+#: Thinslaves/cogs/image/image.py:61
 msgid "Your search returned no results."
 msgstr "Aramanız sonuç döndürdü."
 
-#: redbot/cogs/image/image.py:64
+#: Thinslaves/cogs/image/image.py:64
 msgid "Search results...\n"
 msgstr "Arama sonuçları...\n"
 
-#: redbot/cogs/image/image.py:71 redbot/cogs/image/image.py:128
+#: Thinslaves/cogs/image/image.py:71 Thinslaves/cogs/image/image.py:128
 msgid "Something went wrong. Error code is {code}."
 msgstr "Bir şeyler ters gitti. Hata kodu {code} ' dır."
 
-#: redbot/cogs/image/image.py:78
+#: Thinslaves/cogs/image/image.py:78
 #, docstring
 msgid "Get images from a subreddit.\n\n"
 "        You can customize the search with the following options:\n"
@@ -67,16 +67,16 @@ msgstr "Görüntüleri bir subreddit olsun.\n\n"
 "        - '<window>' top: gün, hafta, ay, yıl, tüm\n"
 "        "
 
-#: redbot/cogs/image/image.py:92
+#: Thinslaves/cogs/image/image.py:92
 msgid "Only 'new' and 'top' are a valid sort type."
 msgstr "Sadece 'yeni' ve 'üst' geçerli bir sıralama türüdür."
 
-#: redbot/cogs/image/image.py:125 redbot/cogs/image/image.py:170
-#: redbot/cogs/image/image.py:194
+#: Thinslaves/cogs/image/image.py:125 Thinslaves/cogs/image/image.py:170
+#: Thinslaves/cogs/image/image.py:194
 msgid "No results found."
 msgstr "Hiçbir sonuç bulunamadı."
 
-#: redbot/cogs/image/image.py:134
+#: Thinslaves/cogs/image/image.py:134
 #, docstring
 msgid "Set the Imgur Client ID.\n\n"
 "        To get an Imgur Client ID:\n"
@@ -102,25 +102,25 @@ msgstr "Imgur Müşteri Kimliği'ni ayarlayın.\n\n"
 "        8. Captcha kutusunu işaretleyin ve sonraki tuşa tıklayın\n"
 "        9. Müşteri kimliğiniz bir sonraki sayfada olacaktır.        "
 
-#: redbot/cogs/image/image.py:148
+#: Thinslaves/cogs/image/image.py:148
 msgid "The Imgur Client ID has been set!"
 msgstr "Imgur istemci kimliği henüz belirlenmedi!"
 
-#: redbot/cogs/image/image.py:153
+#: Thinslaves/cogs/image/image.py:153
 #, docstring
 msgid "Retrieve the first search result from Giphy."
 msgstr "İlk arama sonucu Giphy almak."
 
-#: redbot/cogs/image/image.py:172
+#: Thinslaves/cogs/image/image.py:172
 msgid "Error contacting the Giphy API."
 msgstr "Giphy API'sı ile iletişim kurulurken hata oluştu."
 
-#: redbot/cogs/image/image.py:177
+#: Thinslaves/cogs/image/image.py:177
 #, docstring
 msgid "Retrieve a random GIF from a Giphy search."
 msgstr "Rastgele bir GIF Giphy aramanın almak."
 
-#: redbot/cogs/image/image.py:196
+#: Thinslaves/cogs/image/image.py:196
 msgid "Error contacting the API."
 msgstr "Giphy API'sı ile iletişim kurulurken hata oluştu."
 

@@ -3,8 +3,8 @@ from typing import List, Union
 
 import discord
 
-from redbot.core import Config
-from redbot.core.bot import Red
+from Thinslaves.core import Config
+from Thinslaves.core.bot import Red
 
 from .utils.common_filters import (
     filter_invites,
@@ -752,7 +752,7 @@ async def register_casetypes(new_types: List[dict]) -> List[CaseType]:
 
     See Also
     --------
-    redbot.core.modlog.register_casetype
+    Thinslaves.core.modlog.register_casetype
 
     """
     type_list = []

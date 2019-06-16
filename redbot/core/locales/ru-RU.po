@@ -16,12 +16,12 @@ msgstr ""
 "X-Crowdin-File: /core/locales/messages.pot\n"
 "Language: ru_RU\n"
 
-#: redbot/core/cog_manager.py:312
+#: Thinslaves/core/cog_manager.py:312
 #, docstring
 msgid "Commands to interface with Red's cog manager."
 msgstr "Команды для интерфейса с менеджером плагинов Red."
 
-#: redbot/core/cog_manager.py:317
+#: Thinslaves/core/cog_manager.py:317
 #, docstring
 msgid "\n"
 "        Lists current cog paths in order of priority.\n"
@@ -30,13 +30,13 @@ msgstr "\n"
 "        Список текущих путей плагинов в порядке приоритета.\n"
 "        "
 
-#: redbot/core/cog_manager.py:325
+#: Thinslaves/core/cog_manager.py:325
 msgid "Install Path: {install_path}\n"
 "Core Path: {core_path}\n\n"
 msgstr "Утановочный путь: {install_path}\n"
 "Путь ядра: {core_path}\n\n"
 
-#: redbot/core/cog_manager.py:339
+#: Thinslaves/core/cog_manager.py:339
 #, docstring
 msgid "\n"
 "        Add a path to the list of available cog paths.\n"
@@ -45,15 +45,15 @@ msgstr "\n"
 "        Добавить путь к списку путей доступных плагинов.\n"
 "        "
 
-#: redbot/core/cog_manager.py:343
+#: Thinslaves/core/cog_manager.py:343
 msgid "That path does not exist or does not point to a valid directory."
 msgstr "Этот путь не существует или не указывает на допустимый каталог."
 
-#: redbot/core/cog_manager.py:351
+#: Thinslaves/core/cog_manager.py:351
 msgid "Path successfully added."
 msgstr "Путь успешно добавлен."
 
-#: redbot/core/cog_manager.py:356
+#: Thinslaves/core/cog_manager.py:356
 #, docstring
 msgid "\n"
 "        Removes a path from the available cog paths given the path_number\n"
@@ -64,19 +64,19 @@ msgstr "\n"
 "            из !paths\n"
 "        "
 
-#: redbot/core/cog_manager.py:362 redbot/core/cog_manager.py:385
+#: Thinslaves/core/cog_manager.py:362 Thinslaves/core/cog_manager.py:385
 msgid "Path numbers must be positive."
 msgstr "Номера путей должны быть положительными."
 
-#: redbot/core/cog_manager.py:369
+#: Thinslaves/core/cog_manager.py:369
 msgid "That is an invalid path number."
 msgstr "Это неверный номер пути."
 
-#: redbot/core/cog_manager.py:373
+#: Thinslaves/core/cog_manager.py:373
 msgid "Path successfully removed."
 msgstr "Путь успешно удален."
 
-#: redbot/core/cog_manager.py:378
+#: Thinslaves/core/cog_manager.py:378
 #, docstring
 msgid "\n"
 "        Reorders paths internally to allow discovery of different cogs.\n"
@@ -85,19 +85,19 @@ msgstr "\n"
 "        Внутреннее изменение порядка путей, позволяющее обнаруживать различные плагины.\n"
 "        "
 
-#: redbot/core/cog_manager.py:392
+#: Thinslaves/core/cog_manager.py:392
 msgid "Invalid 'from' index."
 msgstr "Недопустимый индекс 'от'."
 
-#: redbot/core/cog_manager.py:398
+#: Thinslaves/core/cog_manager.py:398
 msgid "Invalid 'to' index."
 msgstr "Недопустимый индекс 'в'."
 
-#: redbot/core/cog_manager.py:402
+#: Thinslaves/core/cog_manager.py:402
 msgid "Paths reordered."
 msgstr "Путь переупорядочен."
 
-#: redbot/core/cog_manager.py:407
+#: Thinslaves/core/cog_manager.py:407
 #, docstring
 msgid "\n"
 "        Returns the current install path or sets it if one is provided.\n"
@@ -112,15 +112,15 @@ msgstr "\n"
 "        Никакие установленные плагины не будут переданы в процессе.\n"
 "        "
 
-#: redbot/core/cog_manager.py:420
+#: Thinslaves/core/cog_manager.py:420
 msgid "That path does not exist."
 msgstr "Этого пути не существует."
 
-#: redbot/core/cog_manager.py:425
+#: Thinslaves/core/cog_manager.py:425
 msgid "The bot will install new cogs to the `{}` directory."
 msgstr "Бот будет устанавливать новые плагины в директорию `{}`."
 
-#: redbot/core/cog_manager.py:431
+#: Thinslaves/core/cog_manager.py:431
 #, docstring
 msgid "\n"
 "        Lists all loaded and available cogs.\n"
@@ -129,35 +129,35 @@ msgstr "\n"
 "        Список всех загруженных и доступных плагинов.\n"
 "        "
 
-#: redbot/core/cog_manager.py:444 redbot/core/cog_manager.py:455
+#: Thinslaves/core/cog_manager.py:444 Thinslaves/core/cog_manager.py:455
 msgid "**{} loaded:**\n"
 msgstr "**{} загружено:**\n"
 
-#: redbot/core/cog_manager.py:445 redbot/core/cog_manager.py:457
+#: Thinslaves/core/cog_manager.py:445 Thinslaves/core/cog_manager.py:457
 msgid "**{} unloaded:**\n"
 msgstr "**{} выгружен:**\n"
 
-#: redbot/core/core_commands.py:263
+#: Thinslaves/core/core_commands.py:263
 #, docstring
 msgid "Commands related to core functions"
 msgstr "Команды, связанные с основными функциями"
 
-#: redbot/core/core_commands.py:267
+#: Thinslaves/core/core_commands.py:267
 #, docstring
 msgid "Pong."
 msgstr "Pong."
 
-#: redbot/core/core_commands.py:272
+#: Thinslaves/core/core_commands.py:272
 #, docstring
 msgid "Shows info about Red"
 msgstr "Показывает информацию о Red"
 
-#: redbot/core/core_commands.py:322
+#: Thinslaves/core/core_commands.py:322
 #, docstring
 msgid "Shows Red's uptime"
 msgstr "Показывает время работы Red"
 
-#: redbot/core/core_commands.py:349
+#: Thinslaves/core/core_commands.py:349
 #, docstring
 msgid "\n"
 "        Commands for toggling embeds on or off.\n\n"
@@ -173,7 +173,7 @@ msgstr "\n"
 "        По умолчанию используются встраиваемые сообщения.\n"
 "        "
 
-#: redbot/core/core_commands.py:371
+#: Thinslaves/core/core_commands.py:371
 #, docstring
 msgid "\n"
 "        Toggle the global embed setting.\n\n"
@@ -188,11 +188,11 @@ msgstr "\n"
 "        встраиваемые сообщения.\n"
 "        "
 
-#: redbot/core/core_commands.py:381
+#: Thinslaves/core/core_commands.py:381
 msgid "Embeds are now {} by default."
 msgstr "Встраиваемые теперь по умолчанию {}."
 
-#: redbot/core/core_commands.py:388
+#: Thinslaves/core/core_commands.py:388
 #, docstring
 msgid "\n"
 "        Toggle the guild's embed setting.\n\n"
@@ -216,15 +216,15 @@ msgstr "\n"
 "        гильдии, кроме команд справки.\n"
 "        "
 
-#: redbot/core/core_commands.py:401 redbot/core/core_commands.py:422
+#: Thinslaves/core/core_commands.py:401 Thinslaves/core/core_commands.py:422
 msgid "Embeds will now fall back to the global setting."
 msgstr "Настройки теперь восстанавливаются."
 
-#: redbot/core/core_commands.py:404
+#: Thinslaves/core/core_commands.py:404
 msgid "Embeds are now {} for this guild."
 msgstr "Настройки {} для этой гильдии."
 
-#: redbot/core/core_commands.py:409
+#: Thinslaves/core/core_commands.py:409
 #, docstring
 msgid "\n"
 "        Toggle the user's embed setting.\n\n"
@@ -248,57 +248,57 @@ msgstr "\n"
 "        сообщениях с ботом, а также для всех команд помощи везде.\n"
 "        "
 
-#: redbot/core/core_commands.py:425
+#: Thinslaves/core/core_commands.py:425
 msgid "Embeds are now {} for you."
 msgstr "Настройки {} для вас."
 
-#: redbot/core/core_commands.py:431
+#: Thinslaves/core/core_commands.py:431
 #, docstring
 msgid "Sends to the owner the last command exception that has occurred\n\n"
 "        If public (yes is specified), it will be sent to the chat instead"
 msgstr "Отправляет владельцу последнее исключение команды, которое произошло\n\n"
 "        Если общедоступно (указано \"yes\"), оно будет отправлено в чат"
 
-#: redbot/core/core_commands.py:448
+#: Thinslaves/core/core_commands.py:448
 #, docstring
 msgid "Show's Red's invite url"
 msgstr "Показать ссылку для приглашения Red"
 
-#: redbot/core/core_commands.py:455
+#: Thinslaves/core/core_commands.py:455
 #, docstring
 msgid "Leaves server"
 msgstr "Покинуть сервер"
 
-#: redbot/core/core_commands.py:475
+#: Thinslaves/core/core_commands.py:475
 #, docstring
 msgid "Lists and allows to leave servers"
 msgstr "Список серверов и разрешение покинуть их"
 
-#: redbot/core/core_commands.py:520
+#: Thinslaves/core/core_commands.py:520
 #, docstring
 msgid "Loads packages"
 msgstr "Загружает пакеты"
 
-#: redbot/core/core_commands.py:552
+#: Thinslaves/core/core_commands.py:552
 #, docstring
 msgid "Unloads packages"
 msgstr "Выгружает пакеты"
 
-#: redbot/core/core_commands.py:570
+#: Thinslaves/core/core_commands.py:570
 #, docstring
 msgid "Reloads packages"
 msgstr "Перезагружает пакеты"
 
-#: redbot/core/core_commands.py:594
+#: Thinslaves/core/core_commands.py:594
 #, docstring
 msgid "Shuts down the bot"
 msgstr "Выключает бота"
 
-#: redbot/core/core_commands.py:599
+#: Thinslaves/core/core_commands.py:599
 msgid "Shutting down... "
 msgstr "Завершение работы... "
 
-#: redbot/core/core_commands.py:605
+#: Thinslaves/core/core_commands.py:605
 #, docstring
 msgid "Attempts to restart Red\n\n"
 "        Makes Red quit with exit code 26\n"
@@ -310,34 +310,34 @@ msgstr "Пытается перезагрузить Red\n\n"
 "        обрабатываться используемым менеджером\n"
 "        процессов"
 
-#: redbot/core/core_commands.py:612
+#: Thinslaves/core/core_commands.py:612
 msgid "Restarting..."
 msgstr "Перезапуск..."
 
-#: redbot/core/core_commands.py:617
+#: Thinslaves/core/core_commands.py:617
 #, docstring
 msgid "Changes Red's settings"
 msgstr "Изменяет настройки Red"
 
-#: redbot/core/core_commands.py:649
+#: Thinslaves/core/core_commands.py:649
 #, docstring
 msgid "Sets the admin role for this server"
 msgstr "Устанавливает роль администратора для этого сервера"
 
-#: redbot/core/core_commands.py:651
+#: Thinslaves/core/core_commands.py:651
 msgid "The admin role for this guild has been set."
 msgstr "Роль администратора была установлена для этого сервера."
 
-#: redbot/core/core_commands.py:657
+#: Thinslaves/core/core_commands.py:657
 #, docstring
 msgid "Sets the mod role for this server"
 msgstr "Устанавливает роль модератора для этого сервера"
 
-#: redbot/core/core_commands.py:659
+#: Thinslaves/core/core_commands.py:659
 msgid "The mod role for this guild has been set."
 msgstr "Роль модератора была установлена для этого сервера."
 
-#: redbot/core/core_commands.py:665
+#: Thinslaves/core/core_commands.py:665
 #, docstring
 msgid "\n"
 "        Toggle whether to use the bot owner-configured colour for embeds.\n\n"
@@ -351,19 +351,19 @@ msgstr "\n"
 "        случае используемый цвет будет цветом главной роли бота.\n"
 "        "
 
-#: redbot/core/core_commands.py:674
+#: Thinslaves/core/core_commands.py:674
 msgid "The bot {} use its configured color for embeds."
 msgstr "Бот {} использовать свой настроенный цвет для встраивания сообщений."
 
-#: redbot/core/core_commands.py:675
+#: Thinslaves/core/core_commands.py:675
 msgid "will not"
 msgstr "не будет"
 
-#: redbot/core/core_commands.py:675
+#: Thinslaves/core/core_commands.py:675
 msgid "will"
 msgstr "будет"
 
-#: redbot/core/core_commands.py:683
+#: Thinslaves/core/core_commands.py:683
 #, docstring
 msgid "\n"
 "        Toggle whether to enable fuzzy command search for the server.\n\n"
@@ -374,19 +374,19 @@ msgstr "\n"
 "        По умолчанию поиск неопределенной команды отключен.\n"
 "        "
 
-#: redbot/core/core_commands.py:691
+#: Thinslaves/core/core_commands.py:691
 msgid "Fuzzy command search has been {} for this server."
 msgstr "Поиск неопределенной команды был {} для этого сервера."
 
-#: redbot/core/core_commands.py:692 redbot/core/core_commands.py:708
+#: Thinslaves/core/core_commands.py:692 Thinslaves/core/core_commands.py:708
 msgid "disabled"
 msgstr "отключен"
 
-#: redbot/core/core_commands.py:692 redbot/core/core_commands.py:708
+#: Thinslaves/core/core_commands.py:692 Thinslaves/core/core_commands.py:708
 msgid "enabled"
 msgstr "включен"
 
-#: redbot/core/core_commands.py:699
+#: Thinslaves/core/core_commands.py:699
 #, docstring
 msgid "\n"
 "        Toggle whether to enable fuzzy command search in DMs.\n\n"
@@ -397,11 +397,11 @@ msgstr "\n"
 "        По умолчанию поиск неопределенных команд отключен.\n"
 "        "
 
-#: redbot/core/core_commands.py:707
+#: Thinslaves/core/core_commands.py:707
 msgid "Fuzzy command search has been {} in DMs."
 msgstr "Поиск неопределенных команд был {} в личных сообщениях."
 
-#: redbot/core/core_commands.py:715
+#: Thinslaves/core/core_commands.py:715
 #, docstring
 msgid "\n"
 "        Sets a default colour to be used for the bot's embeds.\n\n"
@@ -414,60 +414,60 @@ msgstr "\n"
 "        http://discordpy.readthedocs.io/en/rewrite/ext/commands/api.html#discord.ext.commands.ColourConverter\n"
 "        "
 
-#: redbot/core/core_commands.py:725
+#: Thinslaves/core/core_commands.py:725
 msgid "The color has been reset."
 msgstr "Цвет был сброшен."
 
-#: redbot/core/core_commands.py:728
+#: Thinslaves/core/core_commands.py:728
 msgid "The color has been set."
 msgstr "Цвет был установлен."
 
-#: redbot/core/core_commands.py:733
+#: Thinslaves/core/core_commands.py:733
 #, docstring
 msgid "Sets Red's avatar"
 msgstr "Устанавливает аватар Red"
 
-#: redbot/core/core_commands.py:742
+#: Thinslaves/core/core_commands.py:742
 msgid "Failed. Remember that you can edit my avatar up to two times a hour. The URL must be a direct link to a JPG / PNG."
 msgstr "Не удалось. Помните, что вы можете изменять мой аватар до 2-ух раз в час. URL-адрес должен быть прямой ссылкой на JPG / PNG."
 
-#: redbot/core/core_commands.py:749
+#: Thinslaves/core/core_commands.py:749
 msgid "JPG / PNG format only."
 msgstr "JPG / PNG формат только."
 
-#: redbot/core/core_commands.py:751 redbot/core/core_commands.py:844
-#: redbot/core/core_commands.py:862
+#: Thinslaves/core/core_commands.py:751 Thinslaves/core/core_commands.py:844
+#: Thinslaves/core/core_commands.py:862
 msgid "Done."
 msgstr "Готово."
 
-#: redbot/core/core_commands.py:757
+#: Thinslaves/core/core_commands.py:757
 #, docstring
 msgid "Sets Red's playing status"
 msgstr "Устанавливает игровой статус Red"
 
-#: redbot/core/core_commands.py:765
+#: Thinslaves/core/core_commands.py:765
 msgid "Game set."
 msgstr "Игра установлена."
 
-#: redbot/core/core_commands.py:771
+#: Thinslaves/core/core_commands.py:771
 #, docstring
 msgid "Sets Red's listening status"
 msgstr "Устанавливает статус прослушивания Red"
 
-#: redbot/core/core_commands.py:779
+#: Thinslaves/core/core_commands.py:779
 msgid "Listening set."
 msgstr "Прослушка установлена."
 
-#: redbot/core/core_commands.py:785
+#: Thinslaves/core/core_commands.py:785
 #, docstring
 msgid "Sets Red's watching status"
 msgstr "Устанавливает статус просмотра Red"
 
-#: redbot/core/core_commands.py:793
+#: Thinslaves/core/core_commands.py:793
 msgid "Watching set."
 msgstr "Просмотр установлен."
 
-#: redbot/core/core_commands.py:799
+#: Thinslaves/core/core_commands.py:799
 #, docstring
 msgid "Sets Red's status\n\n"
 "        Available statuses:\n"
@@ -484,96 +484,96 @@ msgstr "Устанавливает статус Red\n\n"
 "            invisible - невидимый\n"
 "        "
 
-#: redbot/core/core_commands.py:822
+#: Thinslaves/core/core_commands.py:822
 msgid "Status changed to {}."
 msgstr "Статус изменён на {}."
 
-#: redbot/core/core_commands.py:828
+#: Thinslaves/core/core_commands.py:828
 #, docstring
 msgid "Sets Red's streaming status\n"
 "        Leaving both streamer and stream_title empty will clear it."
 msgstr "Устанавливает статус стрима Red\n"
 "        Если оставить как streamer, так и stream_title пустыми, это очистит его."
 
-#: redbot/core/core_commands.py:849
+#: Thinslaves/core/core_commands.py:849
 #, docstring
 msgid "Sets Red's username"
 msgstr "Устанавливает имя пользователя Red"
 
-#: redbot/core/core_commands.py:854
+#: Thinslaves/core/core_commands.py:854
 msgid "Failed to change name. Remember that you can only do it up to 2 times an hour. Use nicknames if you need frequent changes. `{}set nickname`"
 msgstr "Не удалось изменить имя. Помните, что вы можете делать это до 2-ух раз в час. Используйте никнеймы, если вам нужны частые изменения. `{} установить никнейм`"
 
-#: redbot/core/core_commands.py:868
+#: Thinslaves/core/core_commands.py:868
 #, docstring
 msgid "Sets Red's nickname"
 msgstr "Устанавливает никнейм Red"
 
-#: redbot/core/core_commands.py:872
+#: Thinslaves/core/core_commands.py:872
 msgid "I lack the permissions to change my own nickname."
 msgstr "Мне не хватает разрешений чтобы изменить свой ник."
 
-#: redbot/core/core_commands.py:879
+#: Thinslaves/core/core_commands.py:879
 #, docstring
 msgid "Sets Red's global prefix(es)"
 msgstr "Устанавливает глобальный префикс(ы) Red"
 
-#: redbot/core/core_commands.py:884 redbot/core/core_commands.py:897
+#: Thinslaves/core/core_commands.py:884 Thinslaves/core/core_commands.py:897
 msgid "Prefix set."
 msgstr "Префикс установлен."
 
-#: redbot/core/core_commands.py:890
+#: Thinslaves/core/core_commands.py:890
 #, docstring
 msgid "Sets Red's server prefix(es)"
 msgstr "Устанавливает префикс(ы) сервера Red"
 
-#: redbot/core/core_commands.py:893
+#: Thinslaves/core/core_commands.py:893
 msgid "Guild prefixes have been reset."
 msgstr "Префиксы сервера были сброшены."
 
-#: redbot/core/core_commands.py:902
+#: Thinslaves/core/core_commands.py:902
 #, docstring
 msgid "Sets Red's main owner"
 msgstr "Устанавливает основного владельца Red"
 
-#: redbot/core/core_commands.py:912
+#: Thinslaves/core/core_commands.py:912
 msgid "\n"
 "Verification token:"
 msgstr "\n"
 "Код верификации:"
 
-#: redbot/core/core_commands.py:915
+#: Thinslaves/core/core_commands.py:915
 msgid "Remember:\n"
 msgstr "Помните:\n"
 
-#: redbot/core/core_commands.py:919
+#: Thinslaves/core/core_commands.py:919
 msgid "I have printed a one-time token in the console. Copy and paste it here to confirm you are the owner."
 msgstr "Я напечатал одноразовый токен в консоль. Скопируйте и вставьте для подтверждения что вы являетесь владельцем."
 
-#: redbot/core/core_commands.py:932
+#: Thinslaves/core/core_commands.py:932
 msgid "The `{prefix}set owner` request has timed out."
 msgstr "Время запроса `{prefix}set owner` истекло."
 
-#: redbot/core/core_commands.py:939
+#: Thinslaves/core/core_commands.py:939
 msgid "You have been set as owner."
 msgstr "Вы были назначены владельцем."
 
-#: redbot/core/core_commands.py:941
+#: Thinslaves/core/core_commands.py:941
 msgid "Invalid token."
 msgstr "Неверный токен."
 
-#: redbot/core/core_commands.py:946
+#: Thinslaves/core/core_commands.py:946
 #, docstring
 msgid "Change bot token."
 msgstr "Измените токен бота."
 
-#: redbot/core/core_commands.py:956
+#: Thinslaves/core/core_commands.py:956
 msgid "Please use that command in DM. Since users probably saw your token, it is recommended to reset it right now. Go to the following link and select `Reveal Token` and `Generate a new token?`.\n\n"
 "https://discordapp.com/developers/applications/me/{}"
 msgstr "Пожалуйста используйте эту команду в личных сообщениях. Пользователи увидели сейчас ваш токен, Рекомендуется сбросить его сейчас. Переходите по ссылке ниже и выберите 'просмотреть токен' и 'Сгенерировать новый токен?'.\n\n"
 "https://discordapp.com/developers/applications/me/{}"
 
-#: redbot/core/core_commands.py:971
+#: Thinslaves/core/core_commands.py:971
 #, docstring
 msgid "\n"
 "        Changes bot locale.\n\n"
@@ -586,37 +586,37 @@ msgstr "\n"
 "        Для сброса на английский используйте \"en-US\".\n"
 "        "
 
-#: redbot/core/core_commands.py:982
+#: Thinslaves/core/core_commands.py:982
 msgid "Locale has been set."
 msgstr "Локализация была установлена."
 
-#: redbot/core/core_commands.py:987
+#: Thinslaves/core/core_commands.py:987
 #, docstring
 msgid "Enable or disable Sentry logging.\n\n"
 "        Sentry is the service Red uses to manage error reporting. This should\n"
-"        be disabled if you have made your own modifications to the redbot\n"
+"        be disabled if you have made your own modifications to the Thinslaves\n"
 "        package.\n"
 "        "
 msgstr "Включение или отключение ведения журнала Sentry.\n\n"
 "        Sentry - это сервис, который Red использует для управления\n"
 "        отчетами об ошибках. Он должен быть отключен, если вы \n"
-"        сделали свои собственные изменения в пакете redbot.\n"
+"        сделали свои собственные изменения в пакете Thinslaves.\n"
 "        "
 
-#: redbot/core/core_commands.py:996
+#: Thinslaves/core/core_commands.py:996
 msgid "Done. Sentry logging is now enabled."
 msgstr "Готово. Часовое Журналирование теперь включено."
 
-#: redbot/core/core_commands.py:999
+#: Thinslaves/core/core_commands.py:999
 msgid "Done. Sentry logging is now disabled."
 msgstr "Готово. Часовое Журналирование теперь отключено."
 
-#: redbot/core/core_commands.py:1004
+#: Thinslaves/core/core_commands.py:1004
 #, docstring
 msgid "Manage settings for the help command."
 msgstr "Управление настройками для команды справки."
 
-#: redbot/core/core_commands.py:1009
+#: Thinslaves/core/core_commands.py:1009
 #, docstring
 msgid "Set the character limit for each page in the help message.\n\n"
 "        This setting only applies to embedded help.\n\n"
@@ -635,15 +635,15 @@ msgstr "Установите ограничение символов для ка
 "        Значение по умолчанию составляет 1000 символов.\n"
 "        "
 
-#: redbot/core/core_commands.py:1020
+#: Thinslaves/core/core_commands.py:1020
 msgid "You must give a positive value!"
 msgstr "Вы должны дать положительное значение!"
 
-#: redbot/core/core_commands.py:1024
+#: Thinslaves/core/core_commands.py:1024
 msgid "Done. The character limit per page has been set to {}."
 msgstr "Готово. Максимальное количество символов на странице было установлено равным {}."
 
-#: redbot/core/core_commands.py:1028
+#: Thinslaves/core/core_commands.py:1028
 #, docstring
 msgid "Set the maximum number of help pages sent in a server channel.\n\n"
 "        This setting only applies to embedded help.\n\n"
@@ -660,15 +660,15 @@ msgstr "Установите максимальное количество ст�
 "        Значение по умолчанию составляет 2 страницы.\n"
 "        "
 
-#: redbot/core/core_commands.py:1039
+#: Thinslaves/core/core_commands.py:1039
 msgid "You must give a value of zero or greater!"
 msgstr "Вы должны дать значение ноль или больше!"
 
-#: redbot/core/core_commands.py:1043
+#: Thinslaves/core/core_commands.py:1043
 msgid "Done. The page limit has been set to {}."
 msgstr "Готово. Ограничение на количество страниц установлено на {}."
 
-#: redbot/core/core_commands.py:1047
+#: Thinslaves/core/core_commands.py:1047
 #, docstring
 msgid "\n"
 "        Set the tagline to be used.\n\n"
@@ -682,19 +682,19 @@ msgstr "\n"
 "        значение по умолчанию.\n"
 "        "
 
-#: redbot/core/core_commands.py:1055
+#: Thinslaves/core/core_commands.py:1055
 msgid "The tagline has been reset."
 msgstr "Подзаголовок был сброшен."
 
-#: redbot/core/core_commands.py:1059
+#: Thinslaves/core/core_commands.py:1059
 msgid "Your tagline is too long! Please shorten it to be no more than 2048 characters long."
 msgstr "Ваш подзаголовок слишком длинный! Пожалуйста, уменьшите его до 2048 символов."
 
-#: redbot/core/core_commands.py:1067
+#: Thinslaves/core/core_commands.py:1067
 msgid "The tagline has been set to {}."
 msgstr "Подзаголовок был установлен на {}."
 
-#: redbot/core/core_commands.py:1072
+#: Thinslaves/core/core_commands.py:1072
 #, docstring
 msgid "\n"
 "        Lists all available locales\n\n"
@@ -705,93 +705,93 @@ msgstr "\n"
 "        Используйте `[p]set locale`, чтобы установить локализацию\n"
 "        "
 
-#: redbot/core/core_commands.py:1091
+#: Thinslaves/core/core_commands.py:1091
 #, docstring
 msgid "Creates a backup of all data for the instance."
 msgstr "Создает резервную копию всех данных для сборки."
 
-#: redbot/core/core_commands.py:1152
+#: Thinslaves/core/core_commands.py:1152
 msgid "A backup has been made of this instance. It is at {}."
 msgstr "Резервная копия экземпляра сделана. Она находится {}."
 
-#: redbot/core/core_commands.py:1155
+#: Thinslaves/core/core_commands.py:1155
 msgid "This backup is to large to send via DM."
 msgstr "Эта резервная копия слишком велика для отправки через личные сообщения."
 
-#: redbot/core/core_commands.py:1157
+#: Thinslaves/core/core_commands.py:1157
 msgid "Would you like to receive a copy via DM? (y/n)"
 msgstr "Хотите получить копию через личные сообщения? (y/n)"
 
-#: redbot/core/core_commands.py:1163
+#: Thinslaves/core/core_commands.py:1163
 msgid "Response timed out."
 msgstr "Время ответа истекло."
 
-#: redbot/core/core_commands.py:1166
+#: Thinslaves/core/core_commands.py:1166
 msgid "OK, it's on its way!"
 msgstr "Ок, уже в пути!"
 
-#: redbot/core/core_commands.py:1170
+#: Thinslaves/core/core_commands.py:1170
 msgid "Here's a copy of the backup"
 msgstr "Вот копия резервной копии"
 
-#: redbot/core/core_commands.py:1175
+#: Thinslaves/core/core_commands.py:1175
 msgid "I don't seem to be able to DM you. Do you have closed DMs?"
 msgstr "Кажется, я не могу написать вам в личные сообщения. Вы закрыли ЛС?"
 
-#: redbot/core/core_commands.py:1178
+#: Thinslaves/core/core_commands.py:1178
 msgid "I could not send the backup file."
 msgstr "Я не смог отправить файл резервной копии."
 
-#: redbot/core/core_commands.py:1180
+#: Thinslaves/core/core_commands.py:1180
 msgid "OK then."
 msgstr "Хорошо, тогда."
 
-#: redbot/core/core_commands.py:1182
+#: Thinslaves/core/core_commands.py:1182
 msgid "That directory doesn't seem to exist..."
 msgstr "Эту директорию нельзя использовать..."
 
-#: redbot/core/core_commands.py:1187
+#: Thinslaves/core/core_commands.py:1187
 #, docstring
 msgid "Sends a message to the owner"
 msgstr "Отправляет сообщение владельцу"
 
-#: redbot/core/core_commands.py:1191
+#: Thinslaves/core/core_commands.py:1191
 msgid "User ID: {}"
 msgstr "ID пользователя: {}"
 
-#: redbot/core/core_commands.py:1194
+#: Thinslaves/core/core_commands.py:1194
 msgid "through DM"
 msgstr "через DM"
 
-#: redbot/core/core_commands.py:1196
+#: Thinslaves/core/core_commands.py:1196
 msgid "from {}"
 msgstr "от {}"
 
-#: redbot/core/core_commands.py:1197
+#: Thinslaves/core/core_commands.py:1197
 msgid " | Server ID: {}"
 msgstr " | ID сервера: {}"
 
-#: redbot/core/core_commands.py:1206
+#: Thinslaves/core/core_commands.py:1206
 msgid "Use `{}dm {} <text>` to reply to this user"
 msgstr "Используйте `{}dm {} <text>`чтобы ответить пользователю"
 
-#: redbot/core/core_commands.py:1208
+#: Thinslaves/core/core_commands.py:1208
 msgid "Sent by {} {}"
 msgstr "Отправил {} {}"
 
-#: redbot/core/core_commands.py:1227 redbot/core/core_commands.py:1239
+#: Thinslaves/core/core_commands.py:1227 Thinslaves/core/core_commands.py:1239
 msgid "I cannot send your message, I'm unable to find my owner... *sigh*"
 msgstr "Я не могу прислать ваше сообщение. Я не могу найти своего владельца... *вздох*"
 
-#: redbot/core/core_commands.py:1230 redbot/core/core_commands.py:1242
+#: Thinslaves/core/core_commands.py:1230 Thinslaves/core/core_commands.py:1242
 msgid "I'm unable to deliver your message. Sorry."
 msgstr "Я не могу доставить ваше сообщение. Извините."
 
-#: redbot/core/core_commands.py:1232 redbot/core/core_commands.py:1244
+#: Thinslaves/core/core_commands.py:1232 Thinslaves/core/core_commands.py:1244
 msgid "Your message has been sent."
 msgstr "Ваше сообщение было отправлено."
 
-#: redbot/core/core_commands.py:1249
+#: Thinslaves/core/core_commands.py:1249
 #, docstring
 msgid "Sends a DM to a user\n\n"
 "        This command needs a user id to work.\n"
@@ -806,27 +806,27 @@ msgstr "Отправляет личное сообщение пользоват�
 "        правой кнопкой мыши на пользователя и\n"
 "        скопируйте его ID"
 
-#: redbot/core/core_commands.py:1258
+#: Thinslaves/core/core_commands.py:1258
 msgid "Invalid ID or user not found. You can only send messages to people I share a server with."
 msgstr "Неверный ID или пользователь не найден. Вы можете только отправлять сообщения только тем людям, с которыми я совместно использую сервер."
 
-#: redbot/core/core_commands.py:1269
+#: Thinslaves/core/core_commands.py:1269
 msgid "Owner of {}"
 msgstr "Владелец {}"
 
-#: redbot/core/core_commands.py:1270
+#: Thinslaves/core/core_commands.py:1270
 msgid "You can reply to this message with {}contact"
 msgstr "Вы можете ответить на это сообщение с {} контактом"
 
-#: redbot/core/core_commands.py:1284 redbot/core/core_commands.py:1294
+#: Thinslaves/core/core_commands.py:1284 Thinslaves/core/core_commands.py:1294
 msgid "Sorry, I couldn't deliver your message to {}"
 msgstr "Извините, я не смог доставить сообщение для %s"
 
-#: redbot/core/core_commands.py:1287 redbot/core/core_commands.py:1297
+#: Thinslaves/core/core_commands.py:1287 Thinslaves/core/core_commands.py:1297
 msgid "Message delivered to {}"
 msgstr "Сообщение доставлено к %s"
 
-#: redbot/core/core_commands.py:1302 redbot/core/core_commands.py:1423
+#: Thinslaves/core/core_commands.py:1302 Thinslaves/core/core_commands.py:1423
 #, docstring
 msgid "\n"
 "        Whitelist management commands.\n"
@@ -835,7 +835,7 @@ msgstr "\n"
 "        Команды управления белым списком.\n"
 "        "
 
-#: redbot/core/core_commands.py:1309
+#: Thinslaves/core/core_commands.py:1309
 #, docstring
 msgid "\n"
 "        Adds a user to the whitelist.\n"
@@ -844,11 +844,11 @@ msgstr "\n"
 "        Добавляет пользователя в белый список.\n"
 "        "
 
-#: redbot/core/core_commands.py:1316 redbot/core/core_commands.py:1441
+#: Thinslaves/core/core_commands.py:1316 Thinslaves/core/core_commands.py:1441
 msgid "User added to whitelist."
 msgstr "Пользователь был добавлен в белый список."
 
-#: redbot/core/core_commands.py:1320
+#: Thinslaves/core/core_commands.py:1320
 #, docstring
 msgid "\n"
 "        Lists whitelisted users.\n"
@@ -857,11 +857,11 @@ msgstr "\n"
 "        Список пользователей в белом списке.\n"
 "        "
 
-#: redbot/core/core_commands.py:1325
+#: Thinslaves/core/core_commands.py:1325
 msgid "Whitelisted Users:"
 msgstr "Пользователи в белом списке:"
 
-#: redbot/core/core_commands.py:1334
+#: Thinslaves/core/core_commands.py:1334
 #, docstring
 msgid "\n"
 "        Removes user from whitelist.\n"
@@ -870,15 +870,15 @@ msgstr "\n"
 "        Удаляет пользователя из белого списка.\n"
 "        "
 
-#: redbot/core/core_commands.py:1345 redbot/core/core_commands.py:1476
+#: Thinslaves/core/core_commands.py:1345 Thinslaves/core/core_commands.py:1476
 msgid "User has been removed from whitelist."
 msgstr "Пользователь был удалён из белого списка."
 
-#: redbot/core/core_commands.py:1347 redbot/core/core_commands.py:1481
+#: Thinslaves/core/core_commands.py:1347 Thinslaves/core/core_commands.py:1481
 msgid "User was not in the whitelist."
 msgstr "Пользователь не в белом списке."
 
-#: redbot/core/core_commands.py:1351 redbot/core/core_commands.py:1487
+#: Thinslaves/core/core_commands.py:1351 Thinslaves/core/core_commands.py:1487
 #, docstring
 msgid "\n"
 "        Clears the whitelist.\n"
@@ -887,11 +887,11 @@ msgstr "\n"
 "        Очищает белый список.\n"
 "        "
 
-#: redbot/core/core_commands.py:1355 redbot/core/core_commands.py:1491
+#: Thinslaves/core/core_commands.py:1355 Thinslaves/core/core_commands.py:1491
 msgid "Whitelist has been cleared."
 msgstr "Белый список был очищен."
 
-#: redbot/core/core_commands.py:1360 redbot/core/core_commands.py:1497
+#: Thinslaves/core/core_commands.py:1360 Thinslaves/core/core_commands.py:1497
 #, docstring
 msgid "\n"
 "        blacklist management commands.\n"
@@ -900,7 +900,7 @@ msgstr "\n"
 "        команды управления черным списком.\n"
 "        "
 
-#: redbot/core/core_commands.py:1367
+#: Thinslaves/core/core_commands.py:1367
 #, docstring
 msgid "\n"
 "        Adds a user to the blacklist.\n"
@@ -909,15 +909,15 @@ msgstr "\n"
 "        Добавляет пользователя в черный список.\n"
 "        "
 
-#: redbot/core/core_commands.py:1371 redbot/core/core_commands.py:1512
+#: Thinslaves/core/core_commands.py:1371 Thinslaves/core/core_commands.py:1512
 msgid "You cannot blacklist an owner!"
 msgstr "Вы не можете добавить владельца в чёрный список!"
 
-#: redbot/core/core_commands.py:1378 redbot/core/core_commands.py:1520
+#: Thinslaves/core/core_commands.py:1378 Thinslaves/core/core_commands.py:1520
 msgid "User added to blacklist."
 msgstr "Пользователь добавлен в черный список."
 
-#: redbot/core/core_commands.py:1382
+#: Thinslaves/core/core_commands.py:1382
 #, docstring
 msgid "\n"
 "        Lists blacklisted users.\n"
@@ -926,11 +926,11 @@ msgstr "\n"
 "        Список пользователей в черном списке.\n"
 "        "
 
-#: redbot/core/core_commands.py:1387
+#: Thinslaves/core/core_commands.py:1387
 msgid "blacklisted Users:"
 msgstr "черный список пользователей:"
 
-#: redbot/core/core_commands.py:1396
+#: Thinslaves/core/core_commands.py:1396
 #, docstring
 msgid "\n"
 "        Removes user from blacklist.\n"
@@ -939,15 +939,15 @@ msgstr "\n"
 "        Удаляет пользователя из черного списка.\n"
 "        "
 
-#: redbot/core/core_commands.py:1407 redbot/core/core_commands.py:1555
+#: Thinslaves/core/core_commands.py:1407 Thinslaves/core/core_commands.py:1555
 msgid "User has been removed from blacklist."
 msgstr "Пользователь был удалён из чёрного списка."
 
-#: redbot/core/core_commands.py:1409 redbot/core/core_commands.py:1560
+#: Thinslaves/core/core_commands.py:1409 Thinslaves/core/core_commands.py:1560
 msgid "User was not in the blacklist."
 msgstr "Пользователь не чёрном списке."
 
-#: redbot/core/core_commands.py:1413 redbot/core/core_commands.py:1566
+#: Thinslaves/core/core_commands.py:1413 Thinslaves/core/core_commands.py:1566
 #, docstring
 msgid "\n"
 "        Clears the blacklist.\n"
@@ -956,11 +956,11 @@ msgstr "\n"
 "        Очищает черный список.\n"
 "        "
 
-#: redbot/core/core_commands.py:1417 redbot/core/core_commands.py:1570
+#: Thinslaves/core/core_commands.py:1417 Thinslaves/core/core_commands.py:1570
 msgid "blacklist has been cleared."
 msgstr "чёрный список очищен."
 
-#: redbot/core/core_commands.py:1432
+#: Thinslaves/core/core_commands.py:1432
 #, docstring
 msgid "\n"
 "        Adds a user or role to the whitelist.\n"
@@ -969,11 +969,11 @@ msgstr "\n"
 "        Добавляет пользователя или роль в белый список.\n"
 "        "
 
-#: redbot/core/core_commands.py:1443
+#: Thinslaves/core/core_commands.py:1443
 msgid "Role added to whitelist."
 msgstr "Роль добавлена в белый список."
 
-#: redbot/core/core_commands.py:1447
+#: Thinslaves/core/core_commands.py:1447
 #, docstring
 msgid "\n"
 "        Lists whitelisted users and roles.\n"
@@ -982,11 +982,11 @@ msgstr "\n"
 "        Список пользователей и ролей в белом списке.\n"
 "        "
 
-#: redbot/core/core_commands.py:1452
+#: Thinslaves/core/core_commands.py:1452
 msgid "Whitelisted Users and roles:"
 msgstr "Пользователи и роли в белом списке:"
 
-#: redbot/core/core_commands.py:1463
+#: Thinslaves/core/core_commands.py:1463
 #, docstring
 msgid "\n"
 "        Removes user or role from whitelist.\n"
@@ -995,15 +995,15 @@ msgstr "\n"
 "        Удаляет пользователя или роль из белого списка.\n"
 "        "
 
-#: redbot/core/core_commands.py:1478
+#: Thinslaves/core/core_commands.py:1478
 msgid "Role has been removed from whitelist."
 msgstr "Роль удалена из белого списка."
 
-#: redbot/core/core_commands.py:1483
+#: Thinslaves/core/core_commands.py:1483
 msgid "Role was not in the whitelist."
 msgstr "Роль не была в белом списке."
 
-#: redbot/core/core_commands.py:1506
+#: Thinslaves/core/core_commands.py:1506
 #, docstring
 msgid "\n"
 "        Adds a user or role to the blacklist.\n"
@@ -1012,11 +1012,11 @@ msgstr "\n"
 "        Добавляет пользователя или роль в черный список.\n"
 "        "
 
-#: redbot/core/core_commands.py:1522
+#: Thinslaves/core/core_commands.py:1522
 msgid "Role added to blacklist."
 msgstr "Роль добавлена в черный список."
 
-#: redbot/core/core_commands.py:1526
+#: Thinslaves/core/core_commands.py:1526
 #, docstring
 msgid "\n"
 "        Lists blacklisted users and roles.\n"
@@ -1025,11 +1025,11 @@ msgstr "\n"
 "        Список пользователей и ролей в черном списке.\n"
 "        "
 
-#: redbot/core/core_commands.py:1531
+#: Thinslaves/core/core_commands.py:1531
 msgid "blacklisted Users and Roles:"
 msgstr "пользователи и роли в черном списке:"
 
-#: redbot/core/core_commands.py:1542
+#: Thinslaves/core/core_commands.py:1542
 #, docstring
 msgid "\n"
 "        Removes user or role from blacklist.\n"
@@ -1038,20 +1038,20 @@ msgstr "\n"
 "        Удаляет пользователя или роль из черного списка.\n"
 "        "
 
-#: redbot/core/core_commands.py:1557
+#: Thinslaves/core/core_commands.py:1557
 msgid "Role has been removed from blacklist."
 msgstr "Роль была удалена из черного списка."
 
-#: redbot/core/core_commands.py:1562
+#: Thinslaves/core/core_commands.py:1562
 msgid "Role was not in the blacklist."
 msgstr "Роль не была в черном списке."
 
-#: redbot/core/core_commands.py:1575
+#: Thinslaves/core/core_commands.py:1575
 #, docstring
 msgid "Manage the bot's commands."
 msgstr "Управление командами бота."
 
-#: redbot/core/core_commands.py:1580
+#: Thinslaves/core/core_commands.py:1580
 #, docstring
 msgid "Disable a command.\n\n"
 "        If you're the bot owner, this will disable commands\n"
@@ -1062,30 +1062,30 @@ msgstr "Отключить команду.\n\n"
 "        команды.\n"
 "        "
 
-#: redbot/core/core_commands.py:1594
+#: Thinslaves/core/core_commands.py:1594
 #, docstring
 msgid "Disable a command globally."
 msgstr "Отключить команду глобально."
 
-#: redbot/core/core_commands.py:1598 redbot/core/core_commands.py:1620
-#: redbot/core/core_commands.py:1654 redbot/core/core_commands.py:1676
+#: Thinslaves/core/core_commands.py:1598 Thinslaves/core/core_commands.py:1620
+#: Thinslaves/core/core_commands.py:1654 Thinslaves/core/core_commands.py:1676
 msgid "I couldn't find that command. Please note that it is case sensitive."
 msgstr "Я не мог найти эту команду. Обратите внимание, что она чувствительна к регистру."
 
-#: redbot/core/core_commands.py:1607
+#: Thinslaves/core/core_commands.py:1607
 msgid "That command is already disabled globally."
 msgstr "Эта команда уже отключена глобально."
 
-#: redbot/core/core_commands.py:1616
+#: Thinslaves/core/core_commands.py:1616
 #, docstring
 msgid "Disable a command in this server only."
 msgstr "Отключить команду только на этом сервере."
 
-#: redbot/core/core_commands.py:1631
+#: Thinslaves/core/core_commands.py:1631
 msgid "That command is already disabled in this server."
 msgstr "Эта команда уже отключена на этом сервере."
 
-#: redbot/core/core_commands.py:1637
+#: Thinslaves/core/core_commands.py:1637
 #, docstring
 msgid "Enable a command.\n\n"
 "        If you're a bot owner, this will try to enable a globally\n"
@@ -1096,25 +1096,25 @@ msgstr "Включить команду.\n\n"
 "        глобально отключенную команду по умолчанию.\n"
 "        "
 
-#: redbot/core/core_commands.py:1650
+#: Thinslaves/core/core_commands.py:1650
 #, docstring
 msgid "Enable a command globally."
 msgstr "Включить команду глобально."
 
-#: redbot/core/core_commands.py:1663
+#: Thinslaves/core/core_commands.py:1663
 msgid "That command is already enabled globally."
 msgstr "Эта команда уже включена глобально."
 
-#: redbot/core/core_commands.py:1672
+#: Thinslaves/core/core_commands.py:1672
 #, docstring
 msgid "Enable a command in this server."
 msgstr "Включить команду на этом сервере."
 
-#: redbot/core/core_commands.py:1687
+#: Thinslaves/core/core_commands.py:1687
 msgid "That command is already enabled in this server."
 msgstr "Эта команда уже включена на этом сервере."
 
-#: redbot/core/core_commands.py:1694
+#: Thinslaves/core/core_commands.py:1694
 #, docstring
 msgid "Set the bot's response to disabled commands.\n\n"
 "        Leave blank to send nothing.\n\n"
@@ -1127,7 +1127,7 @@ msgstr "Установите ответ бота на отключенные к�
 "        заполнитель `{command}`.\n"
 "        "
 
-#: redbot/core/core_commands.py:1708
+#: Thinslaves/core/core_commands.py:1708
 #, docstring
 msgid "\n"
 "        Server settings for immunity from automated actions\n"
@@ -1136,7 +1136,7 @@ msgstr "\n"
 "        Настройки сервера для защиты от автоматических действий\n"
 "        "
 
-#: redbot/core/core_commands.py:1715
+#: Thinslaves/core/core_commands.py:1715
 #, docstring
 msgid "\n"
 "        Get's the current members and roles\n\n"
@@ -1147,19 +1147,19 @@ msgstr "\n"
 "        настроенных для автоматической защиты от действий модерации\n"
 "        "
 
-#: redbot/core/core_commands.py:1727
+#: Thinslaves/core/core_commands.py:1727
 msgid "Roles immune from automated moderation actions:\n"
 msgstr "Роли, невосприимчивые к действиям автоматической модерации:\n"
 
-#: redbot/core/core_commands.py:1732
+#: Thinslaves/core/core_commands.py:1732
 msgid "Members immune from automated moderation actions:\n"
 msgstr "Участники, невосприимчивые к действиям автоматической модерации:\n"
 
-#: redbot/core/core_commands.py:1736
+#: Thinslaves/core/core_commands.py:1736
 msgid "No immunty settings here."
 msgstr "Здесь нет настроек невосприимчивости."
 
-#: redbot/core/core_commands.py:1745 redbot/core/core_commands.py:1758
+#: Thinslaves/core/core_commands.py:1745 Thinslaves/core/core_commands.py:1758
 #, docstring
 msgid "\n"
 "        Makes a user or roles immune from automated moderation actions\n"
@@ -1168,15 +1168,15 @@ msgstr "\n"
 "        Сделать пользователя или роли невосприимчивыми к действиям автоматической модерации\n"
 "        "
 
-#: redbot/core/core_commands.py:1750
+#: Thinslaves/core/core_commands.py:1750
 msgid "Already added."
 msgstr "Уже добавлено."
 
-#: redbot/core/core_commands.py:1763
+#: Thinslaves/core/core_commands.py:1763
 msgid "Not in list."
 msgstr "Нет в списке."
 
-#: redbot/core/core_commands.py:1771
+#: Thinslaves/core/core_commands.py:1771
 #, docstring
 msgid "\n"
 "        Checks if a user or role would be considered immune from automated actions\n"
@@ -1185,15 +1185,15 @@ msgstr "\n"
 "        Проверяет, будет ли пользователь или роль считаться защищенными от автоматических действий\n"
 "        "
 
-#: redbot/core/core_commands.py:1776
+#: Thinslaves/core/core_commands.py:1776
 msgid "They are immune"
 msgstr "Они невосприимчивы"
 
-#: redbot/core/core_commands.py:1778
+#: Thinslaves/core/core_commands.py:1778
 msgid "They are not Immune"
 msgstr "Они не невосприимчивы"
 
-#: redbot/core/dev_commands.py:76
+#: Thinslaves/core/dev_commands.py:76
 #, docstring
 msgid "Evaluate a statement of python code.\n\n"
 "        The bot will always respond with the return value of the code.\n"
@@ -1209,7 +1209,7 @@ msgid "Evaluate a statement of python code.\n\n"
 "            author   - command author's member object\n"
 "            message  - the command's message object\n"
 "            discord  - discord.py library\n"
-"            commands - redbot.core.commands\n"
+"            commands - Thinslaves.core.commands\n"
 "            _        - The result of the last dev command.\n"
 "        "
 msgstr "Оценить утверждение кода Python.\n\n"
@@ -1227,11 +1227,11 @@ msgstr "Оценить утверждение кода Python.\n\n"
 "            author   - объект участника команды автора\n"
 "            message  - объект сообщения команды\n"
 "            discord  - библиотека discord.py\n"
-"            commands - redbot.core.commands\n"
+"            commands - Thinslaves.core.commands\n"
 "            _        - Результат последней команды dev.\n"
 "        "
 
-#: redbot/core/dev_commands.py:131
+#: Thinslaves/core/dev_commands.py:131
 #, docstring
 msgid "Execute asynchronous code.\n\n"
 "        This command wraps code into the body of an async function and then\n"
@@ -1246,7 +1246,7 @@ msgid "Execute asynchronous code.\n\n"
 "            author   - command author's member object\n"
 "            message  - the command's message object\n"
 "            discord  - discord.py library\n"
-"            commands - redbot.core.commands\n"
+"            commands - Thinslaves.core.commands\n"
 "            _        - The result of the last dev command.\n"
 "        "
 msgstr "Выполнить асинхронный код.\n\n"
@@ -1262,11 +1262,11 @@ msgstr "Выполнить асинхронный код.\n\n"
 "            author   - объект участника команды автора\n"
 "            message  - объект сообщения команды\n"
 "            discord  - библиотека discord.py\n"
-"            commands - redbot.core.commands\n"
+"            commands - Thinslaves.core.commands\n"
 "            _        - Результат последней команды dev.\n"
 "        "
 
-#: redbot/core/dev_commands.py:195
+#: Thinslaves/core/dev_commands.py:195
 #, docstring
 msgid "Open an interactive REPL.\n\n"
 "        The REPL will only recognise code as messages which start with a\n"
@@ -1283,19 +1283,19 @@ msgstr "Открыть интерактивный REPL.\n\n"
 "        его внутри асинхронной функции.\n"
 "        "
 
-#: redbot/core/dev_commands.py:216
+#: Thinslaves/core/dev_commands.py:216
 msgid "Already running a REPL session in this channel. Exit it with `quit`."
 msgstr "Уже выполняется сеанс REPL в этом канале. Выйдите из него с `quit`."
 
-#: redbot/core/dev_commands.py:221
+#: Thinslaves/core/dev_commands.py:221
 msgid "Enter code to execute or evaluate. `exit()` or `quit` to exit."
 msgstr "Введите код для выполнения или оценки. `exit()` или `quit` чтобы выйти."
 
-#: redbot/core/dev_commands.py:279
+#: Thinslaves/core/dev_commands.py:279
 msgid "Unexpected error: `{}`"
 msgstr "Непредвиденная ошибка: `{}`"
 
-#: redbot/core/dev_commands.py:284
+#: Thinslaves/core/dev_commands.py:284
 #, docstring
 msgid "Mock another user invoking a command.\n\n"
 "        The prefix must not be entered.\n"
@@ -1304,7 +1304,7 @@ msgstr "Дразнить другого пользователя, вызываю
 "        Префикс не должен быть введен.\n"
 "        "
 
-#: redbot/core/dev_commands.py:297
+#: Thinslaves/core/dev_commands.py:297
 #, docstring
 msgid "Dispatch a message event as if it were sent by a different user.\n\n"
 "        Only reads the raw content of the message. Attachments, embeds etc. are\n"
@@ -1315,11 +1315,11 @@ msgstr "Отправьте событие сообщения, как если б
 "        и т. д. игнорируются.\n"
 "        "
 
-#: redbot/core/errors.py:42
+#: Thinslaves/core/errors.py:42
 msgid "{user}'s balance cannot rise above {max:,} {currency}."
 msgstr "{user}'s баланс не может подняться выше {max:,} {currency}."
 
-#: redbot/core/help_formatter.py:309
+#: Thinslaves/core/help_formatter.py:309
 #, docstring
 msgid "Show help documentation.\n\n"
 "    - `[p]help`: Show the help manual.\n"
@@ -1332,15 +1332,15 @@ msgstr "Показать справочную документацию.\n\n"
 "    - `[p]help категория`: Показать команды и описание для категории,\n"
 "    "
 
-#: redbot/core/help_formatter.py:357
+#: Thinslaves/core/help_formatter.py:357
 msgid "I couldn't send the help message to you in DM. Either you blocked me or you disabled DMs in this server."
 msgstr "Я не смог отправить вам сообщение помощи в личные сообщения. Либо вы заблокировали меня, либо вы отключили ЛС на этом сервере."
 
-#: redbot/core/help_formatter.py:375
+#: Thinslaves/core/help_formatter.py:375
 msgid "Command *{command_name}* has no subcommands."
 msgstr "Команда *{command_name}* не имеет подкоманд."
 
-#: redbot/core/help_formatter.py:388
+#: Thinslaves/core/help_formatter.py:388
 msgid "Command *{command_name}* not found."
 msgstr "Команда *{command_name}* не найдена."
 

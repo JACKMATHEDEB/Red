@@ -16,25 +16,25 @@ msgstr ""
 "X-Crowdin-File: /cogs/cleanup/locales/messages.pot\n"
 "Language: de_DE\n"
 
-#: redbot/cogs/cleanup/cleanup.py:19
+#: Thinslaves/cogs/cleanup/cleanup.py:19
 #, docstring
 msgid "Commands for cleaning up messages."
 msgstr "Befehle um Nachrichten zu bereinigen."
 
-#: redbot/cogs/cleanup/cleanup.py:36
+#: Thinslaves/cogs/cleanup/cleanup.py:36
 msgid "Are you sure you want to delete {number} messages? (y/n)"
 msgstr "Bist du sicher das du {number} Nachrichten löschen möchtest? (y/n)"
 
-#: redbot/cogs/cleanup/cleanup.py:48
+#: Thinslaves/cogs/cleanup/cleanup.py:48
 msgid "Cancelled."
 msgstr "Abgebrochen."
 
-#: redbot/cogs/cleanup/cleanup.py:107
+#: Thinslaves/cogs/cleanup/cleanup.py:107
 #, docstring
 msgid "Delete messages."
 msgstr "Nachrichten löschen."
 
-#: redbot/cogs/cleanup/cleanup.py:116
+#: Thinslaves/cogs/cleanup/cleanup.py:116
 #, docstring
 msgid "Delete the last X messages matching the specified text.\n\n"
 "        Example:\n"
@@ -47,7 +47,7 @@ msgstr "Lösche die letzten X Nachrichten, die dem angegebenen Text entsprechen.
 "        Denke daran Gänsefüßchen zu benutzen.\n"
 "        "
 
-#: redbot/cogs/cleanup/cleanup.py:161
+#: Thinslaves/cogs/cleanup/cleanup.py:161
 #, docstring
 msgid "Delete the last X messages from a specified user.\n\n"
 "        Examples:\n"
@@ -60,7 +60,7 @@ msgstr "Lösche die letzen X Nachrichten eines bestimmten Benutzers.\n\n"
 "            `[p]cleanup user Red 6`\n"
 "        "
 
-#: redbot/cogs/cleanup/cleanup.py:215
+#: Thinslaves/cogs/cleanup/cleanup.py:215
 #, docstring
 msgid "Delete all messages after a specified message.\n\n"
 "        To get a message id, enable developer mode in Discord's\n"
@@ -73,11 +73,11 @@ msgstr "Lösche alle Nachrichten nach einer bestimmten Nachricht.\n\n"
 "        eine Nachricht und kopiere die ID.\n"
 "        "
 
-#: redbot/cogs/cleanup/cleanup.py:228 redbot/cogs/cleanup/cleanup.py:260
+#: Thinslaves/cogs/cleanup/cleanup.py:228 Thinslaves/cogs/cleanup/cleanup.py:260
 msgid "Message not found."
 msgstr "Nachricht nicht gefunden."
 
-#: redbot/cogs/cleanup/cleanup.py:247
+#: Thinslaves/cogs/cleanup/cleanup.py:247
 #, docstring
 msgid "Deletes X messages before specified message.\n\n"
 "        To get a message id, enable developer mode in Discord's\n"
@@ -89,7 +89,7 @@ msgstr "Löscht X Nachrichten vor einer bestimmten Nachricht.\n\n"
 "        Discord Einstellungen, im 'Erscheinungsbild' Reiter. Klicke dann mit rechts auf\n"
 "        eine Nachricht und kopiere die ID.        "
 
-#: redbot/cogs/cleanup/cleanup.py:278
+#: Thinslaves/cogs/cleanup/cleanup.py:278
 #, docstring
 msgid "Delete the last X messages.\n\n"
 "        Example:\n"
@@ -100,12 +100,12 @@ msgstr "Lösche die letzten X Nachrichten.\n\n"
 "            `[p]cleanup messages 26`\n"
 "        "
 
-#: redbot/cogs/cleanup/cleanup.py:308
+#: Thinslaves/cogs/cleanup/cleanup.py:308
 #, docstring
 msgid "Clean up command messages and messages from the bot."
 msgstr "Bereinige Befehls Nachrichten und Nachrichten von dem Bot."
 
-#: redbot/cogs/cleanup/cleanup.py:383
+#: Thinslaves/cogs/cleanup/cleanup.py:383
 #, docstring
 msgid "Clean up messages owned by the bot.\n\n"
 "        By default, all messages are cleaned. If a third argument is specified,\n"

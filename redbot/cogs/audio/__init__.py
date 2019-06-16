@@ -1,4 +1,4 @@
-from redbot.core import commands
+from Thinslaves.core import commands
 
 from .audio import Audio
 

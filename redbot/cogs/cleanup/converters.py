@@ -1,5 +1,5 @@
-from redbot.core.commands import Converter, BadArgument
-from redbot.core.i18n import Translator
+from Thinslaves.core.commands import Converter, BadArgument
+from Thinslaves.core.i18n import Translator
 
 _ = Translator("Cleanup", __file__)
 

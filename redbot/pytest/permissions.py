@@ -1,7 +1,7 @@
 import pytest
 
-from redbot.cogs.permissions import Permissions
-from redbot.core import Config
+from Thinslaves.cogs.permissions import Permissions
+from Thinslaves.core import Config
 
 
 @pytest.fixture()

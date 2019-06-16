@@ -6,9 +6,9 @@ from datetime import datetime, timedelta
 from typing import cast, Optional, Union
 
 import discord
-from redbot.core import commands, i18n, checks, modlog
-from redbot.core.utils.chat_formatting import pagify
-from redbot.core.utils.mod import is_allowed_by_hierarchy, get_audit_reason
+from Thinslaves.core import commands, i18n, checks, modlog
+from Thinslaves.core.utils.chat_formatting import pagify
+from Thinslaves.core.utils.mod import is_allowed_by_hierarchy, get_audit_reason
 from .abc import MixinMeta
 from .converters import RawUserIds
 

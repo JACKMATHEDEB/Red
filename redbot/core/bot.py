@@ -20,7 +20,7 @@ from .utils import common_filters
 
 CUSTOM_GROUPS = "CUSTOM_GROUPS"
 
-log = logging.getLogger("redbot")
+log = logging.getLogger("Thinslaves")
 
 
 def _is_submodule(parent, child):
@@ -387,7 +387,7 @@ class RedBase(commands.GroupMixin, commands.bot.BotBase, RPCMixin):  # pylint: d
                 raise RuntimeError(
                     f"The {cog.__class__.__name__} cog in the {cog.__module__} package,"
                     " is not using Red's command module, and cannot be added. "
-                    "If this is your cog, please use `from redbot.core import commands`"
+                    "If this is your cog, please use `from Thinslaves.core import commands`"
                     "in place of `from discord.ext import commands`. For more details on "
                     "this requirement, see this page: "
                     "http://red-discordbot.readthedocs.io/en/v3-develop/framework_commands.html"

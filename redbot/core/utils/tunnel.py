@@ -1,6 +1,6 @@
 import discord
 from datetime import datetime
-from redbot.core.utils.chat_formatting import pagify
+from Thinslaves.core.utils.chat_formatting import pagify
 import io
 import weakref
 from typing import List, Optional

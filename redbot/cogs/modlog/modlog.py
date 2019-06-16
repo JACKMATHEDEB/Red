@@ -2,11 +2,11 @@ from typing import Optional, Union
 
 import discord
 
-from redbot.core import checks, modlog, commands
-from redbot.core.bot import Red
-from redbot.core.i18n import Translator, cog_i18n
-from redbot.core.utils.chat_formatting import box
-from redbot.core.utils.menus import menu, DEFAULT_CONTROLS
+from Thinslaves.core import checks, modlog, commands
+from Thinslaves.core.bot import Red
+from Thinslaves.core.i18n import Translator, cog_i18n
+from Thinslaves.core.utils.chat_formatting import box
+from Thinslaves.core.utils.menus import menu, DEFAULT_CONTROLS
 
 
 _ = Translator("ModLog", __file__)

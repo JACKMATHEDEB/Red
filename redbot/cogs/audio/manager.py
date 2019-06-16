@@ -11,7 +11,7 @@ from typing import Optional, Tuple, ClassVar, List
 
 import aiohttp
 
-from redbot.core import data_manager
+from Thinslaves.core import data_manager
 
 JAR_VERSION = "3.2.0.3"
 JAR_BUILD = 796

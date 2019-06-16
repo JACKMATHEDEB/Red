@@ -1,6 +1,6 @@
 import discord
-from redbot.core import commands
-from redbot.core.i18n import Translator
+from Thinslaves.core import commands
+from Thinslaves.core.i18n import Translator
 from .installable import Installable
 
 _ = Translator("Koala", __file__)

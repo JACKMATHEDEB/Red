@@ -5,11 +5,11 @@ from typing import Generator, Tuple, Iterable, Optional
 
 import discord
 from discord.ext.commands.view import StringView
-from redbot.core import Config, commands, checks
-from redbot.core.i18n import Translator, cog_i18n
-from redbot.core.utils.chat_formatting import box
+from Thinslaves.core import Config, commands, checks
+from Thinslaves.core.i18n import Translator, cog_i18n
+from Thinslaves.core.utils.chat_formatting import box
 
-from redbot.core.bot import Red
+from Thinslaves.core.bot import Red
 from .alias_entry import AliasEntry
 
 _ = Translator("Alias", __file__)

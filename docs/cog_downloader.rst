@@ -3,7 +3,7 @@
 Downloader Cog Reference
 ========================
 
-.. automodule:: redbot.cogs.downloader
+.. automodule:: Thinslaves.cogs.downloader
 
-.. autoclass:: redbot.cogs.downloader.downloader.Downloader
+.. autoclass:: Thinslaves.cogs.downloader.downloader.Downloader
     :members:

@@ -17,11 +17,11 @@ Paste the following and replace all instances of :code:`username` with the usern
 .. code-block:: none
 
     [Unit]
-    Description=%I redbot
+    Description=%I Thinslaves
     After=multi-user.target
 
     [Service]
-    ExecStart=/home/username/.local/bin/redbot %I --no-prompt
+    ExecStart=/home/username/.local/bin/Thinslaves %I --no-prompt
     User=username
     Group=username
     Type=idle

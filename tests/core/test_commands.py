@@ -1,5 +1,5 @@
 import pytest
-from redbot.core import commands
+from Thinslaves.core import commands
 
 
 @pytest.fixture(scope="session")

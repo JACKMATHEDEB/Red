@@ -23,7 +23,7 @@ import aiohttp
 import discord
 import pkg_resources
 
-from redbot.core import (
+from Thinslaves.core import (
     __version__,
     version_info as red_version_info,
     VersionInfo,
@@ -36,7 +36,7 @@ from .utils.predicates import MessagePredicate
 from .utils.chat_formatting import humanize_timedelta, pagify, box, inline
 
 if TYPE_CHECKING:
-    from redbot.core.bot import Red
+    from Thinslaves.core.bot import Red
 
 __all__ = ["Core"]
 
@@ -251,9 +251,9 @@ class CoreLogic:
         Returns
         -------
         dict
-            `redbot` and `discordpy` keys containing version information for both.
+            `Thinslaves` and `discordpy` keys containing version information for both.
         """
-        return {"redbot": __version__, "discordpy": discord.__version__}
+        return {"Thinslaves": __version__, "discordpy": discord.__version__}
 
     async def _invite_url(self) -> str:
         """
@@ -288,14 +288,14 @@ class Core(commands.Cog, CoreLogic):
     @commands.command()
     async def info(self, ctx: commands.Context):
         """Shows info about Red"""
-        author_repo = "https://github.com/Twentysix26"
-        org_repo = "https://github.com/Cog-Creators"
-        red_repo = org_repo + "/Red-DiscordBot"
-        red_pypi = "https://pypi.python.org/pypi/Red-DiscordBot"
-        support_server_url = "https://discord.gg/red"
+        author_repo = "https://github.com/JACKMATHEDEB/"
+        org_repo = "https://github.com/JACKMATHEDEB"
+        red_repo = org_repo + "/Red"
+        red_pypi = "https://pypi.python.org/pypi/tryingtogetone"
+        support_server_url = "https://discord.gg/nyZyZW"
         dpy_repo = "https://github.com/Rapptz/discord.py"
         python_url = "https://www.python.org/"
-        since = datetime.datetime(2016, 1, 2, 0, 0)
+        since = datetime.datetime(2001, 1, 2, 0, 0)
         days_since = (datetime.datetime.utcnow() - since).days
         dpy_version = "[{}]({})".format(discord.__version__, dpy_repo)
         python_version = "[{}.{}.{}]({})".format(*sys.version_info[:3], python_url)
@@ -309,10 +309,10 @@ class Core(commands.Cog, CoreLogic):
                 data = await r.json()
         outdated = VersionInfo.from_str(data["info"]["version"]) > red_version_info
         about = _(
-            "This is an instance of [Red, an open source Discord bot]({}) "
-            "created by [Twentysix]({}) and [improved by many]({}).\n\n"
-            "Red is backed by a passionate community who contributes and "
-            "creates content for everyone to enjoy. [Join us today]({}) "
+            "This is [Thinslave]({}) "
+            "created by [Thinmatrix]({}) and [improved by testing]({}).\n\n"
+            "Thinslave is a small venture created by me and "
+            " for everyone to enjoy. [Join us today]({}) "
             "and help us improve!\n\n"
         ).format(red_repo, author_repo, org_repo, support_server_url)
 
@@ -320,7 +320,7 @@ class Core(commands.Cog, CoreLogic):
         embed.add_field(name=_("Instance owned by"), value=str(owner))
         embed.add_field(name="Python", value=python_version)
         embed.add_field(name="discord.py", value=dpy_version)
-        embed.add_field(name=_("Red version"), value=red_version)
+        embed.add_field(name=_("Slave version"), value=red_version)
         if outdated:
             embed.add_field(
                 name=_("Outdated"), value=_("Yes, {} is available").format(data["info"]["version"])
@@ -1074,7 +1074,7 @@ class Core(commands.Cog, CoreLogic):
         To reset to English, use "en-US".
         """
         red_dist = pkg_resources.get_distribution("red-discordbot")
-        red_path = Path(red_dist.location) / "redbot"
+        red_path = Path(red_dist.location) / "Thinslaves"
         locale_list = [loc.stem.lower() for loc in list(red_path.glob("**/*.po"))]
         if locale_name.lower() in locale_list or locale_name.lower() == "en-us":
             i18n.set_locale(locale_name)
@@ -1113,7 +1113,7 @@ class Core(commands.Cog, CoreLogic):
     @checks.is_owner()
     async def api(self, ctx: commands.Context, service: str, *, tokens: TokenConverter):
         """Set various external API tokens.
-        
+
         This setting will be asked for by some 3rd party cogs and some core cogs.
 
         To add the keys provide the service name and the tokens as a comma separated
@@ -1139,7 +1139,7 @@ class Core(commands.Cog, CoreLogic):
         Allows the help command to be sent as a paginated menu instead of seperate
         messages.
 
-        This defaults to False. 
+        This defaults to False.
         Using this without a setting will toggle.
         """
         if use_menus is None:
@@ -1279,7 +1279,7 @@ class Core(commands.Cog, CoreLogic):
         """
         async with ctx.channel.typing():
             red_dist = pkg_resources.get_distribution("red-discordbot")
-            red_path = Path(red_dist.location) / "redbot"
+            red_path = Path(red_dist.location) / "Thinslaves"
             locale_list = [loc.stem for loc in list(red_path.glob("**/*.po"))]
             locale_list.append("en-US")
             locale_list = sorted(set(locale_list))
@@ -1300,12 +1300,12 @@ class Core(commands.Cog, CoreLogic):
                 return await ctx.send(
                     _("That path doesn't seem to exist.  Please provide a valid path.")
                 )
-        from redbot.core.data_manager import basic_config, instance_name
-        from redbot.core.drivers.red_json import JSON
+        from Thinslaves.core.data_manager import basic_config, instance_name
+        from Thinslaves.core.drivers.red_json import JSON
 
         data_dir = Path(basic_config["DATA_PATH"])
         if basic_config["STORAGE_TYPE"] == "MongoDB":
-            from redbot.core.drivers.red_mongo import Mongo
+            from Thinslaves.core.drivers.red_mongo import Mongo
 
             m = Mongo("Core", "0", **basic_config["STORAGE_DETAILS"])
             db = m.db
@@ -1550,7 +1550,7 @@ class Core(commands.Cog, CoreLogic):
     @checks.is_owner()
     async def datapath(self, ctx: commands.Context):
         """Prints the bot's data path."""
-        from redbot.core.data_manager import basic_config
+        from Thinslaves.core.data_manager import basic_config
 
         data_dir = Path(basic_config["DATA_PATH"])
         msg = _("Data path: {path}").format(path=data_dir)

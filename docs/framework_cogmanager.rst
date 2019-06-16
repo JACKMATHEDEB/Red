@@ -4,5 +4,5 @@
 Cog Manager
 ===========
 
-.. automodule:: redbot.core.cog_manager
+.. automodule:: Thinslaves.core.cog_manager
     :members:

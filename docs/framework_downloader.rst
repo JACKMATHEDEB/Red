@@ -55,12 +55,12 @@ Keys specific to the cog info.json (case sensitive)
 API Reference
 *************
 
-.. automodule:: redbot.cogs.downloader.json_mixins
+.. automodule:: Thinslaves.cogs.downloader.json_mixins
 
 .. autoclass RepoJSONMixin
     :members
 
-.. automodule:: redbot.cogs.downloader.installable
+.. automodule:: Thinslaves.cogs.downloader.installable
 
 Installable
 ^^^^^^^^^^^
@@ -68,7 +68,7 @@ Installable
 .. autoclass:: Installable
     :members:
 
-.. automodule:: redbot.cogs.downloader.repo_manager
+.. automodule:: Thinslaves.cogs.downloader.repo_manager
 
 Repo
 ^^^^
@@ -85,6 +85,6 @@ Repo Manager
 Exceptions
 ^^^^^^^^^^
 
-.. automodule:: redbot.cogs.downloader.errors
+.. automodule:: Thinslaves.cogs.downloader.errors
     :members:
 

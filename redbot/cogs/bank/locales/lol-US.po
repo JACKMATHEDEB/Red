@@ -16,24 +16,24 @@ msgstr ""
 "X-Crowdin-File: /cogs/bank/locales/messages.pot\n"
 "Language: lol_US\n"
 
-#: redbot/cogs/bank/bank.py:58
+#: Thinslaves/cogs/bank/bank.py:58
 #, docstring
 msgid "Bank"
 msgstr ""
 
-#: redbot/cogs/bank/bank.py:70
+#: Thinslaves/cogs/bank/bank.py:70
 #, docstring
 msgid "Base command for bank settings."
 msgstr ""
 
-#: redbot/cogs/bank/bank.py:83
+#: Thinslaves/cogs/bank/bank.py:83
 msgid "Bank settings:\n\n"
 "Bank name: {bank_name}\n"
 "Currency: {currency_name}\n"
 "Default balance: {default_balance}"
 msgstr ""
 
-#: redbot/cogs/bank/bank.py:94
+#: Thinslaves/cogs/bank/bank.py:94
 #, docstring
 msgid "Toggle whether the bank is global or not.\n\n"
 "        If the bank is global, it will become per-server.\n"
@@ -41,37 +41,37 @@ msgid "Toggle whether the bank is global or not.\n\n"
 "        "
 msgstr ""
 
-#: redbot/cogs/bank/bank.py:101
+#: Thinslaves/cogs/bank/bank.py:101
 msgid "per-server"
 msgstr ""
 
-#: redbot/cogs/bank/bank.py:101
+#: Thinslaves/cogs/bank/bank.py:101
 msgid "global"
 msgstr "global"
 
-#: redbot/cogs/bank/bank.py:104
+#: Thinslaves/cogs/bank/bank.py:104
 msgid "This will toggle the bank to be {banktype}, deleting all accounts in the process! If you're sure, type `{command}`"
 msgstr ""
 
-#: redbot/cogs/bank/bank.py:111
+#: Thinslaves/cogs/bank/bank.py:111
 msgid "The bank is now {banktype}."
 msgstr ""
 
-#: redbot/cogs/bank/bank.py:116
+#: Thinslaves/cogs/bank/bank.py:116
 #, docstring
 msgid "Set the bank's name."
 msgstr ""
 
-#: redbot/cogs/bank/bank.py:118
+#: Thinslaves/cogs/bank/bank.py:118
 msgid "Bank name has been set to: {name}"
 msgstr ""
 
-#: redbot/cogs/bank/bank.py:123
+#: Thinslaves/cogs/bank/bank.py:123
 #, docstring
 msgid "Set the name for the bank's currency."
 msgstr ""
 
-#: redbot/cogs/bank/bank.py:125
+#: Thinslaves/cogs/bank/bank.py:125
 msgid "Currency name has been set to: {name}"
 msgstr ""
 
