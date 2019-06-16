@@ -172,7 +172,7 @@ def red(config_fr):
 
     cli_flags = parse_cli_flags(["ignore_me"])
 
-    description = "Red v3 - Alpha"
+    description = "Thinslave v3 - Alpha"
 
     Config.get_core_conf = lambda *args, **kwargs: config_fr
 

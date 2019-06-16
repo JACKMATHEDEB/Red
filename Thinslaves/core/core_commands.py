@@ -246,7 +246,7 @@ class CoreLogic:
     @classmethod
     async def _version_info(cls) -> Dict[str, str]:
         """
-        Version information for Red and discord.py
+        Version information for Slave and discord.py
 
         Returns
         -------
@@ -287,7 +287,7 @@ class Core(commands.Cog, CoreLogic):
 
     @commands.command()
     async def info(self, ctx: commands.Context):
-        """Shows info about Red"""
+        """Shows info about Slave"""
         author_repo = "https://github.com/JACKMATHEDEB/"
         org_repo = "https://github.com/JACKMATHEDEB"
         red_repo = org_repo + "/Red"
@@ -327,7 +327,7 @@ class Core(commands.Cog, CoreLogic):
             )
         if custom_info:
             embed.add_field(name=_("About this instance"), value=custom_info, inline=False)
-        embed.add_field(name=_("About Red"), value=about, inline=False)
+        embed.add_field(name=_("About Slave"), value=about, inline=False)
 
         embed.set_footer(
             text=_("Bringing joy since 02 Jan 2016 (over {} days ago!)").format(days_since)
@@ -339,7 +339,7 @@ class Core(commands.Cog, CoreLogic):
 
     @commands.command()
     async def uptime(self, ctx: commands.Context):
-        """Shows Red's uptime"""
+        """Shows Slave's uptime"""
         since = ctx.bot.uptime.strftime("%Y-%m-%d %H:%M:%S")
         delta = datetime.datetime.utcnow() - self.bot.uptime
         await ctx.send(
@@ -687,9 +687,9 @@ class Core(commands.Cog, CoreLogic):
     @commands.command(name="restart")
     @checks.is_owner()
     async def _restart(self, ctx: commands.Context, silently: bool = False):
-        """Attempts to restart Red
+        """Attempts to restart Slave
 
-        Makes Red quit with exit code 26
+        Makes Slave quit with exit code 26
         The restart is not guaranteed: it must be dealt
         with by the process manager in use"""
         with contextlib.suppress(discord.HTTPException):
@@ -699,7 +699,7 @@ class Core(commands.Cog, CoreLogic):
 
     @commands.group(name="set")
     async def _set(self, ctx: commands.Context):
-        """Changes Red's settings"""
+        """Changes Slave's settings"""
         if ctx.invoked_subcommand is None:
             if ctx.guild:
                 guild = ctx.guild
@@ -846,7 +846,7 @@ class Core(commands.Cog, CoreLogic):
     @checks.bot_in_a_guild()
     @checks.is_owner()
     async def _game(self, ctx: commands.Context, *, game: str = None):
-        """Sets Red's playing status"""
+        """Sets Slave's playing status"""
 
         if game:
             game = discord.Game(name=game)
@@ -860,7 +860,7 @@ class Core(commands.Cog, CoreLogic):
     @checks.bot_in_a_guild()
     @checks.is_owner()
     async def _listening(self, ctx: commands.Context, *, listening: str = None):
-        """Sets Red's listening status"""
+        """Sets Slave's listening status"""
 
         status = ctx.bot.guilds[0].me.status if len(ctx.bot.guilds) > 0 else discord.Status.online
         if listening:
@@ -874,7 +874,7 @@ class Core(commands.Cog, CoreLogic):
     @checks.bot_in_a_guild()
     @checks.is_owner()
     async def _watching(self, ctx: commands.Context, *, watching: str = None):
-        """Sets Red's watching status"""
+        """Sets Slave's watching status"""
 
         status = ctx.bot.guilds[0].me.status if len(ctx.bot.guilds) > 0 else discord.Status.online
         if watching:
@@ -1005,7 +1005,7 @@ class Core(commands.Cog, CoreLogic):
         print(token)
 
         owner_disclaimer = _(
-            "⚠ **Only** the person who is hosting Red should be "
+            "⚠ **Only** the person who is hosting Slave should be "
             "owner. **This has SERIOUS security implications. The "
             "owner can access any data that is present on the host "
             "system.** ⚠"
@@ -1588,7 +1588,7 @@ class Core(commands.Cog, CoreLogic):
         if await ctx.embed_requested():
             e = discord.Embed(color=await ctx.embed_colour())
             e.title = "Debug Info for Red"
-            e.add_field(name="Red version", value=redver, inline=True)
+            e.add_field(name="Slave version", value=redver, inline=True)
             e.add_field(name="Python version", value=pyver, inline=True)
             e.add_field(name="Discord.py version", value=dpy_version, inline=True)
             e.add_field(name="Pip version", value=pipver, inline=True)
@@ -1599,7 +1599,7 @@ class Core(commands.Cog, CoreLogic):
         else:
             info = (
                 "Debug Info for Red\n\n"
-                + "Red version: {}\n".format(redver)
+                + "Slave version: {}\n".format(redver)
                 + "Python version: {}\n".format(pyver)
                 + "Discord.py version: {}\n".format(dpy_version)
                 + "Pip version: {}\n".format(pipver)
