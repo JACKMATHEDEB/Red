@@ -287,12 +287,9 @@ class Core(commands.Cog, CoreLogic):
 
     @commands.command()
     async def info(self, ctx: commands.Context):
-        """Shows info about Red"""
-        author_repo = "https://github.com/Twentysix26"
-        org_repo = "https://github.com/Thinmatrix"
-        red_repo = org_repo + "/Thinslave-DiscordBot"
+        """Shows info about Thinslave"""
+        author_repo = "https://github.com/Jackmadb"
         red_pypi = "https://pypi.python.org/pypi/Thinslave-DiscordBot"
-        support_server_url = "https://discord.gg/red"
         dpy_repo = "https://github.com/Rapptz/discord.py"
         python_url = "https://www.python.org/"
         since = datetime.datetime(2016, 1, 2, 0, 0)
@@ -309,12 +306,12 @@ class Core(commands.Cog, CoreLogic):
                 data = await r.json()
         outdated = VersionInfo.from_str(data["info"]["version"]) > red_version_info
         about = _(
-            "This is an instance of [Red, an open source Discord bot]({}) "
-            "created by [Twentysix]({}) and [improved by many]({}).\n\n"
-            "Red is backed by a passionate community who contributes and "
-            "creates content for everyone to enjoy. [Join us today]({}) "
-            "and help us improve!\n\n"
-        ).format(red_repo, author_repo, org_repo, support_server_url)
+            "This is an instance of [Thin, a slave]({}) "
+            "created by [Thinmatrix]({}) and [improved by many]({}).\n\n"
+            "Thinslave is backed by a passionate community who contributes and "
+            "ooF "
+            "oof!\n\n"
+        ).format(author_repo,)
 
         embed = discord.Embed(color=(await ctx.embed_colour()))
         embed.add_field(name=_("Instance owned by"), value=str(owner))
@@ -1113,7 +1110,7 @@ class Core(commands.Cog, CoreLogic):
     @checks.is_owner()
     async def api(self, ctx: commands.Context, service: str, *, tokens: TokenConverter):
         """Set various external API tokens.
-        
+
         This setting will be asked for by some 3rd party cogs and some core cogs.
 
         To add the keys provide the service name and the tokens as a comma separated
@@ -1139,7 +1136,7 @@ class Core(commands.Cog, CoreLogic):
         Allows the help command to be sent as a paginated menu instead of seperate
         messages.
 
-        This defaults to False. 
+        This defaults to False.
         Using this without a setting will toggle.
         """
         if use_menus is None:
