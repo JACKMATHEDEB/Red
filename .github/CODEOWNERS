@@ -1,0 +1,61 @@
+# Default
+*                                   @Twentysix26
+
+# Core
+Thinslave/core/bank.py                      @palmtree5
+Thinslave/core/checks.py                    @tekulvw
+Thinslave/core/cli.py                       @tekulvw
+Thinslave/core/config.py                    @tekulvw
+Thinslave/core/cog_manager.py               @tekulvw
+Thinslave/core/core_commands.py             @tekulvw
+Thinslave/core/context.py                   @Tobotimus
+Thinslave/core/commands/*                   @mikeshardmind
+Thinslave/core/data_manager.py              @tekulvw
+Thinslave/core/dev_commands.py              @tekulvw
+Thinslave/core/drivers/*                    @tekulvw
+Thinslave/core/events.py                    @tekulvw
+Thinslave/core/global_checks.py             @tekulvw
+Thinslave/core/i18n.py                      @tekulvw
+Thinslave/core/json_io.py                   @tekulvw
+Thinslave/core/modlog.py                    @palmtree5
+Thinslave/core/rpc.py                       @tekulvw
+Thinslave/core/utils/chat_formatting.py     @tekulvw
+Thinslave/core/utils/mod.py                 @palmtree5
+Thinslave/core/utils/data_converter.py      @mikeshardmind
+Thinslave/core/utils/antispam.py            @mikeshardmind
+Thinslave/core/utils/tunnel.py              @mikeshardmind
+Thinslave/core/utils/caching.py             @mikeshardmind
+Thinslave/core/utils/common_filters.py      @mikeshardmind
+
+# Cogs
+Thinslave/cogs/admin/*                 @tekulvw
+Thinslave/cogs/alias/*                 @tekulvw
+Thinslave/cogs/audio/*                 @aikaterna
+Thinslave/cogs/bank/*                  @tekulvw
+Thinslave/cogs/cleanup/*               @palmtree5
+Thinslave/cogs/customcom/*             @palmtree5
+Thinslave/cogs/downloader/*            @tekulvw
+Thinslave/cogs/economy/*               @palmtree5
+Thinslave/cogs/filter/*                @palmtree5
+Thinslave/cogs/general/*               @palmtree5
+Thinslave/cogs/image/*                 @palmtree5
+Thinslave/cogs/mod/*                   @palmtree5
+Thinslave/cogs/modlog/*                @palmtree5
+Thinslave/cogs/streams/*               @Twentysix26 @palmtree5
+Thinslave/cogs/trivia/*                @Tobotimus
+Thinslave/cogs/reports/*               @mikeshardmind
+Thinslave/cogs/permissions/*           @mikeshardmind
+Thinslave/cogs/warnings/*              @palmtree5
+
+# Docs
+docs/*                              @tekulvw @palmtree5
+
+# Setup, instance setup, and running the bot
+setup.py                            @tekulvw
+Thinslave/__init__.py                  @tekulvw
+Thinslave/__main__.py                  @tekulvw
+Thinslave/setup.py                     @tekulvw
+
+# Others
+.travis.yml                         @Kowlin
+crowdin.yml                         @Kowlin
